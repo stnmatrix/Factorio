@@ -42,28 +42,53 @@ body
 	display: block
 	max-width: 100%
 	height: auto
+
 .header
 	padding: 20px 0 0
 	margin-bottom: 20px  
 	&-select
 		text-align: center
+
 .main-content
 	width: 100%
 	display: flex
 	padding: 10px 
 	.files
-		background-color: #FFF
+		background-color: $files-bg
 		width: 100%
 		border-radius: 2px
 		margin: 0 auto
 		padding: 50px
-		.sections
-			width: 100%		
-			.section
-				background-color: pink 
+		.file
+			width: 100%
+			p
+				cursor: pointer
+				margin: 0
+				strong
+					font-weight: 600
+			.sections
 				width: 100%
-				margin: 5px
-				border-radius: 2px
-				padding: 5px
+				.section
+					width: 100%
+					margin: 5px 0
+					border-radius: 2px
+					padding: 5px
+					.table-wrap
+						table
+							background-color: $table-bg
+							border: 
+								left: 1px solid #DDD
+								right: 1px solid #DDD
+								bottom: 1px solid #DDD
+							thead
+								color: $table-text-color
+								tr
+									text-transform: uppercase
+									font-weight: 800
+							tbody
+								color: lighten($table-text-color, 12%)
+
+caption
+	display: inline-block
 
 @import "media" // Всегда в конце
