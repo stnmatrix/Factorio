@@ -1,6 +1,6 @@
 [
 	{
-		"addon-oldunkle-0.cfg": {
+		"file-0.cfg": {
 			"recipe-name": [
 				{
 					"var": "chlorine-decomposition",
@@ -20,7 +20,7 @@
 		}
 	},
 	{
-		"addon-oldunkle-1.cfg": {
+		"file-1.cfg": {
 			"recipe-name": [
 				{
 					"var": "chlorine-decomposition",
@@ -40,7 +40,7 @@
 		}
 	},
 	{
-		"addon-oldunkle-0.cfg": {
+		"file-2.cfg": {
 			"recipe-name": [
 				{
 					"var": "chlorine-decomposition",
@@ -60,7 +60,7 @@
 		}
 	},
 	{
-		"addon-0.cfg": {
+		"file-3.cfg": {
 			"recipe-name": [
 				{
 					"var": "chlorine-decomposition",
