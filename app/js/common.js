@@ -1,6 +1,6 @@
 $(function() {
-	const mainContent = $(".main-content"),
-				filesDiv = $(`<div class="files"></div>`);
+	let mainContent = $(".main-content"),
+			filesDiv = $(`<div class="files"></div>`);
 
 	$.getJSON("getdir.json", response => {
 		response.map(files => {
@@ -9,7 +9,7 @@ $(function() {
 		});
 	});
 
-	const renderFiles = files => {
+	let renderFiles = files => {
 		let sectionsDiv = $(`<div class="sections"></div>`),
 				sectionDiv = $(`<div class="section"></div>`),
 				fileDiv = $(`<div class="file"></div>`),
@@ -33,7 +33,7 @@ $(function() {
 		sectionsDiv.append(sectionDiv);
 	};
 
-	const sectionCreate = file => {
+	let sectionCreate = file => {
 		let fileDiv = $('.main-content .file'),
 				sectionDiv = $('.sections .section'),
 				p = $(`<p></p>`),
@@ -48,7 +48,7 @@ $(function() {
 			sectionDiv.append(p);
 			sectionDiv.append(tableWrapper),
 			tableWrapper.append(table);
-			p.html(`<strong>Property</strong>: ${propname}`).wrapInner('<pre></pre>');
+			p.html(`<strong>Group-name</strong>: ${propname}`).wrapInner('<pre></pre>');
 
 			// Click Event
 			p.click(event => {
@@ -66,13 +66,14 @@ $(function() {
 		});
 	};
 
-	const createRow = rowData => {
+	let createRow = rowData => {
 		let tbody = $('<tbody></tbody>'),
-				tr = $('<tr />');
+				tr = $('<tr></tr>');
 
 		$('.section .table').append(tbody);
 
 		rowData.map(val => {
+			console.log(val.var)
 			tr.append(`<td>${val.var}</td>`)
 			tr.append(`<td>${val.en}</td>`)
 			tr.append(`<td>${val.ru}</td>`)
