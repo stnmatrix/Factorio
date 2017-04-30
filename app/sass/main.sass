@@ -49,19 +49,23 @@ body
 	&-select
 		text-align: center
 
+.hidden_template
+	display: none
+
 .main-content
 	width: 100%
 	display: flex
+	flex-flow: row wrap
 	padding: 10px 
 	.files
 		background-color: $files-bg
-		width: 100%
+		flex: 1 100%
 		border-radius: 2px
 		margin: 0 auto
 		padding: 50px
 		.file
 			width: 100%
-			p
+			pre
 				cursor: pointer
 				margin: 0
 				strong
@@ -75,11 +79,7 @@ body
 					padding: 5px
 					.table-wrap
 						table
-							background-color: $table-bg
-							border: 
-								left: 1px solid #DDD
-								right: 1px solid #DDD
-								bottom: 1px solid #DDD
+							background-color: $table-bg							
 							thead
 								color: $table-text-color
 								tr

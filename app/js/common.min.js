@@ -1,84 +1,74 @@
 $(function() {
-	let mainContent = $(".main-content"),
-			filesDiv = $(`<div class="files"></div>`);
+	const mainContent = $(".main-content"),
+				files = $('.main-content .files'),
+				file = $('.main-content .file'),
+				filePre = $('.main-content .file > p > pre'),
+				sections = $('.main-content .sections'),
+				section = $('.main-content .section'),
+				sectionPre = $('.main-content .section > p > pre'),
+				tbody = $('.main-content .section > .table-wrap > .table tbody');
+	let count = 0;
+			
 
 	$.getJSON("getdir.json", response => {
 		response.map(files => {
-			mainContent.append(filesDiv);
-			renderFiles(files);
+			renderContent(files);
 		});
 	});
-
-	let renderFiles = files => {
-		let sectionsDiv = $(`<div class="sections"></div>`),
-				sectionDiv = $(`<div class="section"></div>`),
-				fileDiv = $(`<div class="file"></div>`),
-				p = $(`<p></p>`);
+	
+	const renderContent = files => {
 
 		$.each(files, (filename,obj) => {
-			p.html(`<strong>FILE</strong>: ${filename}`).wrapInner('<pre></pre>');
+			let filesDiv = $('.hidden_template').clone();
+				
+			filesDiv
+				.attr('id',`${count++}`)
+				.removeClass('hidden_template')
+				.css('display','flex')
+				.appendTo(mainContent);
 
-			// Click Event //
-			p.click(event => {
-				$(event.target).parent().next('.sections').slideToggle();
+			filesDiv
+				.find('.file > pre')
+				.html(`<strong>file:</strong> ${filename}`)
+			
+
+			$.each(files[filename],(groupname,obj) => {
+				let tr = $('<tr></tr>'),
+						section = $(`
+							<div class="section">
+								<pre><strong>group name:</strong> ${groupname}</pre>
+								<div class="table-wrap">
+									<table class="table table-condensed section-table">
+										<thead>
+											<tr>
+												<td>VARIABLE NAME</td>
+												<td>EN</td>
+												<td>RU</td>
+											</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+								</div>
+						`);
+
+				obj.map((val) => {
+					tr.append(`<td>${val.var}</td>`)
+					tr.append(`<td>${val.en}</td>`)
+					tr.append(`<td>${val.ru}</td>`)
+				});
+				tr.appendTo(section.find('.table tbody'))
+				section.appendTo(filesDiv.find('.sections'))
+
+
+				
 			});
-			//
-
-			sectionCreate(files[filename]);
-		});
-
-		filesDiv.append(fileDiv);
-		fileDiv.append(p);
-		fileDiv.append(sectionsDiv);
-		sectionsDiv.append(sectionDiv);
-	};
-
-	let sectionCreate = file => {
-		let fileDiv = $('.main-content .file'),
-				sectionDiv = $('.sections .section'),
-				p = $(`<p></p>`),
-				table = $(`<table class="table table-condensed section-table"></table>`),
-				tableWrapper = $('<div class="table-wrap"></div>',),
-				thead = $(`<thead></thead>`),
-				tr = $(`<tr><td>Variable name</td><td>En</td><td>Ru</td></tr>`);
-
-		$.each(file,(propname,val) => {
-			thead.append(tr);
-			table.append(thead);			
-			sectionDiv.append(p);
-			sectionDiv.append(tableWrapper),
-			tableWrapper.append(table);
-			p.html(`<strong>Group-name</strong>: ${propname}`).wrapInner('<pre></pre>');
-
-			// Click Event
-			p.click(event => {
-				let tableWrap = $(event.target).parent().next('div.table-wrap');
-
-				if (tableWrap.css('display') === 'none') {
-					tableWrap.slideUp();   // НЕ РАБОТАЕТ !!!
-				} else {
-					tableWrap.slideUp();
-				}
-			});
-			//
-
-			createRow(val);
 		});
 	};
 
-	let createRow = rowData => {
-		let tbody = $('<tbody></tbody>'),
-				tr = $('<tr></tr>');
 
-		$('.section .table').append(tbody);
-
-		rowData.map(val => {
-			console.log(val.var)
-			tr.append(`<td>${val.var}</td>`)
-			tr.append(`<td>${val.en}</td>`)
-			tr.append(`<td>${val.ru}</td>`)
-		});
-
-		tbody.append(tr);
-	};
+			// // Click Event //
+			// p.click(event => {
+			// 	$(event.target).parent().next('.sections').slideToggle();
+			// });
+			// //
 });

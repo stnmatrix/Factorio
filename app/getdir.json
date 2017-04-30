@@ -38,5 +38,365 @@
 				}
 			]
 		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-0.cfg": {
+			"recipe-name": [
+				{
+					"var": "chlorine-decomposition",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water",
+					"ru": "Далеко-далеко за словесными горами в стране.",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "old-unkle",
+					"en": "Chlorine Decomposition",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	},
+	{
+		"file-1.cfg": {
+			"recipe-name1": [
+				{
+					"var": "chlorine-decomposition1",
+					"en": "Chlorine Decomposition: Chlorine, Purified Water1",
+					"ru": "Далеко-далеко за словесными горами в стране.1",
+					"status": 1
+				}
+			],
+			"technology-name1": [
+				{
+					"var": "old-unkle1",
+					"en": "Chlorine Decomposition1",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
 	}
 ]
