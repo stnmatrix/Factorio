@@ -1,20 +1,19 @@
 $(function() {
 	const mainContent = $(".main-content"),
-				files = $('.main-content .files'),
-				file = $('.main-content .file'),
-				filePre = $('.main-content .file > p > pre'),
-				sections = $('.main-content .sections'),
-				section = $('.main-content .section'),
-				sectionPre = $('.main-content .section > p > pre'),
-				tbody = $('.main-content .section > .table-wrap > .table tbody');
+				select = $('#dir');
 	let count = 0;
-			
 
-	$.getJSON("getdir.json", response => {
+	const requestSection = $.getJSON("", response => {
+ 
+	})
+
+
+	const requestContent = $.getJSON("getdir.json", response => {
 		response.map(files => {
 			renderContent(files);
 		});
-	});
+	})
+		.fail(error => { console.log( "error" ) });
 	
 	const renderContent = files => {
 
@@ -30,19 +29,19 @@ $(function() {
 			filesDiv
 				.find('.file > pre')
 				.text(filename)
-				
+				.append($('<i class="fa fa-sort-down"></i>'));
+
 			filesDiv
 				.find('.file > pre')
 				.click(event => {
-					$(event.target)
-						.parent('.file')
-						.children('.sections')
-						.slideToggle();
+					let sections = $(event.target).parent('.file').children('.sections');
+
+					sections.slideToggle();
+					$(event.target).find('.fa').toggleClass('fa-sort-up');
 				});
-			
 
 			$.each(files[filename],(groupname,obj) => {
-				let tr = $('<tr></tr>'),
+				
 						section = $(`
 							<div class="section">
 								<pre>${groupname}</pre>
@@ -61,24 +60,29 @@ $(function() {
 						`);
 
 				obj.map((val) => {
+					let tr = $('<tr></tr>');
 					tr.append(`<td>${val.var}</td>`);
 					tr.append(`<td>${val.en}</td>`);
 					tr.append(`<td>${val.ru}</td>`);
+					tr.appendTo(section.find('tbody'));
 				});
+					section.appendTo(filesDiv.find('.sections'));
 
-				tr.appendTo(section.find('.table tbody'));
-				section.appendTo(filesDiv.find('.sections'));
 
 				// Click Event
-				section.find('pre').click(event => {
+				section.find('pre').append($('<i class="fa fa-sort-down"></i>')).click(event => {
 					$(event.target)
 						.parent('.section')
 						.children('.table-wrap')
 						.slideToggle();
+						
+					$(event.target).find('.fa').toggleClass('fa-sort-up');
 				});
-
-				
 			});
 		});
 	};
+
+
+
+
 });
