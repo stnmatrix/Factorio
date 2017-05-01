@@ -1,0 +1,6893 @@
+[
+	{
+		"bio-processing.cfg": {
+			"entity-name": [
+				{
+					"var": "algae-farm",
+					"en": "Algae Farm MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "algae-farm-2",
+					"en": "Algae Farm MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "algae-farm-3",
+					"en": "Algae Farm MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "algae-farm-4",
+					"en": "Algae Farm MK4",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "algae-green",
+					"en": "Green Algae",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cellulose-fiber",
+					"en": "Cellulose Fiber",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-cellulose",
+					"en": "Cellulose Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "wood-pellets",
+					"en": "Wood Pellets",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "wood-bricks",
+					"en": "Wood Bricks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "algae-brown",
+					"en": "Brown Algae",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-alginic-acid",
+					"en": "Alginic Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "circuit-wood-fiber-board",
+					"en": "Cellulose Fiber Board",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "algae-blue",
+					"en": "Blue Algae",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "blue-cellulose-fiber",
+					"en": "Blue Cellulose Fiber",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "algae-red",
+					"en": "Red Algae",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "red-cellulose-fiber",
+					"en": "Red Cellulose Fiber",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-calcium-carbonate",
+					"en": "Calcium Carbonate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "petri-dish",
+					"en": "Petri Dish",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-bacteria",
+					"en": "Alien Bacteria",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact",
+					"en": "Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "substrate-dish",
+					"en": "Substrate Dish",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-silver",
+					"en": "Silver Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-titanium",
+					"en": "Titanium Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-cobalt",
+					"en": "Cobalt Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-copper",
+					"en": "Copper Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-gold",
+					"en": "Gold Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-iron",
+					"en": "Iron Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-tungsten",
+					"en": "Tungsten Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-zinc",
+					"en": "Zinc Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-base",
+					"en": "Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-blue",
+					"en": "Blue Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-green",
+					"en": "Green Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-orange",
+					"en": "Orange Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-purple",
+					"en": "Purple Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-red",
+					"en": "Red Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-pre-artifact-yellow",
+					"en": "Yellow Alien Pre-Artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact",
+					"en": "Small alien artifact",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"fluid-name": [
+				{
+					"var": "alien-spores",
+					"en": "Alien Spores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-goo",
+					"en": "Alien Goo",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [
+				{
+					"var": "algae-green",
+					"en": "Green Algae Farming",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cellulose-fiber-algae",
+					"en": "Cellulose Fiber Extraction",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-from-sodium-hydroxide",
+					"en": "Paste from Sodium Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "paste-from-gas-chlor-methane",
+					"en": "Paste from Chlor Methane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cellulose-fiber-raw-wood",
+					"en": "Cellulose Fiber from Raw Wood",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "wood-from-cellulose",
+					"en": "Wood from Cellulose and Paste",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "wood-from-cellulose-resin",
+					"en": "Wood from Cellulose and Resin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "wood-pellets",
+					"en": "Wood Pellets",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "wood-bricks",
+					"en": "Wood Bricks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-carbon-dioxide-from-wood",
+					"en": "Carbon Dioxide Gas From Wood",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-methanol-from-wood",
+					"en": "Methanol Gas From Wood",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-category-name": [
+				{
+					"var": "bio-processing",
+					"en": "bio-processing",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-group-name": [
+				{
+					"var": "bio-processing",
+					"en": "bio-processing",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "bio-processing-green",
+					"en": "Green Algae Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "bio-processing-brown",
+					"en": "Brown Algae Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "bio-processing-blue",
+					"en": "Blue Algae Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "bio-processing-red",
+					"en": "Red Algae Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "bio-processing-alien",
+					"en": "Alien Bio Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "bio-processing-paste",
+					"en": "Paste Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "big-alien-artifacts",
+					"en": "Big Alien Artifacts",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"catalysts.cfg": {
+			"fluid-name": [],
+			"recipe-name": [],
+			"technology-description": [],
+			"item-group-name": [],
+			"entity-name": [],
+			"item-name": [
+				{
+					"var": "alien-artifact-red",
+					"en": "Red alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-artifact-orange",
+					"en": "Orange alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-artifact-yellow",
+					"en": "Yellow alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-artifact-green",
+					"en": "Green alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-artifact-blue",
+					"en": "Blue alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "alien-artifact-purple",
+					"en": "Purple alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact",
+					"en": "Small alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact-red",
+					"en": "Small red alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact-orange",
+					"en": "Small orange alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact-yellow",
+					"en": "Small yellow alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact-green",
+					"en": "Small green alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact-blue",
+					"en": "Small blue alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "small-alien-artifact-purple",
+					"en": "Small purple alien artifact",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-base",
+					"en": "Basic Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-blue",
+					"en": "Blue Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-green",
+					"en": "Green Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-orange",
+					"en": "Orange Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-purple",
+					"en": "Purple Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-red",
+					"en": "Red Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-yellow",
+					"en": "Yellow Catalyst",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "catalysts",
+					"en": "Catalysts",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"components.cfg": {
+			"entity-name": [
+				{
+					"var": "angels-main-lab",
+					"en": "Tech Archive",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-basic-lab",
+					"en": "Basic Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-energy-lab-1",
+					"en": "Energy Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-energy-lab-2",
+					"en": "Energy Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-enhance-lab-1",
+					"en": "Enhancement Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-enhance-lab-2",
+					"en": "Enhancement Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-exploration-lab-1",
+					"en": "Exploration Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-exploration-lab-2",
+					"en": "Exploration Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-lab-1",
+					"en": "Logistic Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-lab-2",
+					"en": "Logistic Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-processing-lab-1",
+					"en": "Processing Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-processing-lab-2",
+					"en": "Processing Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-war-lab-1",
+					"en": "Warfare Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-war-lab-2",
+					"en": "Warfare Tech Laboratory",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "angels-main-lab",
+					"en": "Tech Archive",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-basic-lab",
+					"en": "Basic Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-energy-lab-1",
+					"en": "Energy Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-energy-lab-2",
+					"en": "Energy Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-enhance-lab-1",
+					"en": "Enhancement Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-enhance-lab-2",
+					"en": "Enhancement Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-exploration-lab-1",
+					"en": "Exploration Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-exploration-lab-2",
+					"en": "Exploration Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-lab-1",
+					"en": "Logistic Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-lab-2",
+					"en": "Logistic Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-processing-lab-1",
+					"en": "Processing Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-processing-lab-2",
+					"en": "Processing Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-war-lab-1",
+					"en": "Warfare Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-war-lab-2",
+					"en": "Warfare Tech Laboratory",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-burner-generator-vequip",
+					"en": "Vehicle Burner Generator",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fusion-reactor-vequip",
+					"en": "Vehicle Fusion Reactor",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-repair-roboport-vequip",
+					"en": "Vehicle Repair Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-construction-roboport-vequip",
+					"en": "Vehicle Construction Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-heavy-energy-shield-vequip",
+					"en": "Vehicle Heavy Shield Generator",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-rocket-defense-equipment-vequip",
+					"en": "Vehicle Rocket Defense",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"equipment-name": [
+				{
+					"var": "angels-burner-generator-vequip",
+					"en": "Vehicle Burner Generator",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fusion-reactor-vequip",
+					"en": "Vehicle Fusion Reactor",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-repair-roboport-vequip",
+					"en": "Vehicle Repair Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-construction-roboport-vequip",
+					"en": "Vehicle Construction Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-heavy-energy-shield-vequip",
+					"en": "Vehicle Heavy Shield Generator",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-rocket-defense-equipment-vequip",
+					"en": "Vehicle Rocket Defense",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [],
+			"recipe-category-name": [],
+			"item-group-name": [
+				{
+					"var": "angels-components",
+					"en": "Angel's Components",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-tech",
+					"en": "Angel's Technology",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-enhancement",
+					"en": "Angel's Enhancement",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-subgroup-name": [],
+			"technology-name": [
+				{
+					"var": "angels-vequipment",
+					"en": "Vehicle Equipment",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"exploration.cfg": {
+			"fluid-name": [],
+			"recipe-name": [],
+			"technology-description": [],
+			"item-group-name": [],
+			"equipment-name": [],
+			"entity-name": [
+				{
+					"var": "heavy-tank-cannon",
+					"en": "Heavy Tank Cannon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-tank-rocket-launcher",
+					"en": "Heavy Rocket Launcher",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-tank-machine-gun",
+					"en": "Heavy Machine Gun",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-heavy-tank",
+					"en": "\"Mammoth\" Heavy Tank",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "heavy-tank-cannon",
+					"en": "Heavy Tank Cannon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-tank-rocket-launcher",
+					"en": "Heavy Rocket Launcher",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-tank-machine-gun",
+					"en": "Heavy Machine Gun",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-cannon-shell",
+					"en": "Heavy Cannon Shell",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-heavy-tank",
+					"en": "\"Mammoth\" Heavy Tank",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "angels-vequipment",
+					"en": "Vehicle Equipment",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-heavy-tank",
+					"en": "\"Mammoth\" Heavy Tank",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"logistic.cfg": {
+			"entity-name": [
+				{
+					"var": "cargo-roboport",
+					"en": "Cargo Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cargo-robot",
+					"en": "Cargo Robot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "construction-roboport",
+					"en": "Construction Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-construction-robot",
+					"en": "Construction Robot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-zone-expander",
+					"en": "Small Logistic Zone Expander",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-zone-expander-2",
+					"en": "Medium Logistic Zone Expander",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-relay-station",
+					"en": "Small Logistic Relay Station",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-relay-station-2",
+					"en": "Medium Logistic Relay Station",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-big-chest",
+					"en": "Big Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-passive-provider",
+					"en": "Big Passive Provider Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-requester",
+					"en": "Big Requester Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-active-provider",
+					"en": "Big Active Provider Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-Storage",
+					"en": "Big Storage Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-crawler",
+					"en": "\"Crawler\" Construction Vehicle",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-locomotive",
+					"en": "\"Crawler\" Construction Train Locomotive",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-locomotive-wagon",
+					"en": "\"Crawler\" Construction Train Locomotive Wagon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-bot-wagon",
+					"en": "\"Crawler\" Construction Train Robot Wagon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-wagon",
+					"en": "\"Crawler\" Construction Train Wagon",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "cargo-roboport",
+					"en": "Cargo Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cargo-robot",
+					"en": "Cargo Robot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "construction-roboport",
+					"en": "Construction Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-construction-robot",
+					"en": "Construction Robot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-zone-expander",
+					"en": "Small Logistic Zone Expander",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-big-chest",
+					"en": "Big Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-passive-provider",
+					"en": "Big Passive Provider Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-requester",
+					"en": "Big Requester Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-active-provider",
+					"en": "Big Active Provider Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-chest-Storage",
+					"en": "Big Storage Chest",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-crawler",
+					"en": "\"Crawler\" Construction Vehicle",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-locomotive",
+					"en": "\"Crawler\" Construction Train Locomotive",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-locomotive-wagon",
+					"en": "\"Crawler\" Construction Train Locomotive Wagon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-bot-wagon",
+					"en": "\"Crawler\" Construction Train Robot Wagon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-wagon",
+					"en": "\"Crawler\" Construction Train Wagon",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [
+				{
+					"var": "cargo-roboport",
+					"en": "Cargo Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cargo-robot",
+					"en": "Cargo Robot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "construction-roboport",
+					"en": "Construction Roboport",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-construction-robot",
+					"en": "Construction Robot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-zone-expander",
+					"en": "Small Logistic Zone Expander",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-crawler",
+					"en": "\"Crawler\" Construction Vehicle",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-locomotive",
+					"en": "\"Crawler\" Construction Train Locomotive",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-locomotive-wagon",
+					"en": "\"Crawler\" Construction Train Locomotive Wagon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-bot-wagon",
+					"en": "\"Crawler\" Construction Train Robot Wagon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crawler-wagon",
+					"en": "\"Crawler\" Construction Train Wagon",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-category-name": [],
+			"item-group-name": [
+				{
+					"var": "angels-logistics",
+					"en": "Angel's Logistics",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-subgroup-name": [],
+			"technology-name": [
+				{
+					"var": "angels-construction-robots",
+					"en": "Construction Robots",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cargo-robots",
+					"en": "Cargo Robots",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-crawler",
+					"en": "\"Crawler\" Construction Vehicle",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-crawler-train",
+					"en": "\"Crawler\" Construction Train",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"names.cfg": {
+			"entity-name": [
+				{
+					"var": "infinite-copper-ore",
+					"en": "Infinite Copper Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-iron-ore",
+					"en": "Infinite Iron Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-coal",
+					"en": "Infinite Coal",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-stone",
+					"en": "Infinite Stone",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-tin-ore",
+					"en": "Infinite Tin Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-gold-ore",
+					"en": "Infinite Gold Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-bauxite-ore",
+					"en": "Infinite Aluminium ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-lead-ore",
+					"en": "Infinite Lead Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-quartz",
+					"en": "Infinite Silicon ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-rutile-ore",
+					"en": "Infinite Titanium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-tungsten-ore",
+					"en": "Infinite Tungsten Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-zinc-ore",
+					"en": "Infinite Zinc Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-nickel-ore",
+					"en": "Infinite Nickel Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-gem-ore",
+					"en": "Infinite Gem Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-sulfur",
+					"en": "Infinite Sulfur",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-silver-ore",
+					"en": "Infinite Silver Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-cobalt-ore",
+					"en": "Infinite Cobalt Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-uraninite",
+					"en": "Infinite Uraninite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-fluorite",
+					"en": "Infinite Fluorite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-y-res1",
+					"en": "Infinite N4-Material Chunk",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-y-res2",
+					"en": "Infinite F7-Material Chunk",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-uranium-ore",
+					"en": "Infinite Uranium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-tenemut",
+					"en": "Infinite Tenemut Cluster",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1",
+					"en": "Saphirite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2",
+					"en": "Jivolite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3",
+					"en": "Stiratite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4",
+					"en": "Crotinnium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5",
+					"en": "Rubyte",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6",
+					"en": "Bobmonium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore1",
+					"en": "Infinite Saphirite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore2",
+					"en": "Infinite Jivolite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore3",
+					"en": "Infinite Stiratite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore4",
+					"en": "Infinite Crotinnium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore5",
+					"en": "Infinite Rubyte",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore6",
+					"en": "Infinite Bobmonium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fissure",
+					"en": "Fissure",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-natural-gas",
+					"en": "Gas Well",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-crystal-rock",
+					"en": "Crystal Rock",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"autoplace-control-names": [
+				{
+					"var": "infinite-copper-ore",
+					"en": "Infinite Copper Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-iron-ore",
+					"en": "Infinite Iron Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-coal",
+					"en": "Infinite Coal",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-stone",
+					"en": "Infinite Stone",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-tin-ore",
+					"en": "Infinite Tin Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-gold-ore",
+					"en": "Infinite Gold Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-bauxite-ore",
+					"en": "Infinite Aluminium ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-lead-ore",
+					"en": "Infinite Lead Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-quartz",
+					"en": "Infinite Silicon ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-rutile-ore",
+					"en": "Infinite Titanium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-tungsten-ore",
+					"en": "Infinite Tungsten Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-zinc-ore",
+					"en": "Infinite Zinc Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-nickel-ore",
+					"en": "Infinite Nickel Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-gem-ore",
+					"en": "Infinite Gem Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-sulfur",
+					"en": "Infinite Sulfur",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-silver-ore",
+					"en": "Infinite Silver Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-cobalt-ore",
+					"en": "Infinite Cobalt Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1",
+					"en": "Saphirite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2",
+					"en": "Jivolite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3",
+					"en": "Stiratite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4",
+					"en": "Crotinnium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5",
+					"en": "Rubyte",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6",
+					"en": "Bobmonium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore1",
+					"en": "Infinite Saphirite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore2",
+					"en": "Infinite Jivolite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore3",
+					"en": "Infinite Stiratite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore4",
+					"en": "Infinite Crotinnium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore5",
+					"en": "Infinite Rubyte",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-angels-ore6",
+					"en": "Infinite Bobmonium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fissure",
+					"en": "Fissure",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-natural-gas",
+					"en": "Gas Well",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-uraninite",
+					"en": "Infinite Uraninite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-fluorite",
+					"en": "Infinite Fluorite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-y-res1",
+					"en": "Infinite N4-Material Chunk",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-y-res2",
+					"en": "Infinite F7-Material Chunk",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-uranium-ore",
+					"en": "Infinite Uranium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "infinite-tenemut",
+					"en": "Infinite Tenemut Cluster",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "angels-ore1",
+					"en": "Saphirite Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2",
+					"en": "Jivolite Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3",
+					"en": "Stiratite Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4",
+					"en": "Crotinnium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5",
+					"en": "Rubyte Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6",
+					"en": "Bobmonium Ore",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-description": [
+				{
+					"var": "angels-ore1-bob",
+					"en": "Refining and processing Saphirite can yield Iron, Copper, Quartz, Nickel, Titanium, Zinc",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-bob",
+					"en": "Refining and processing Jivolite can yield Iron, Copper, Aluminium, Zinc, Silver, Tunsten",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-bob",
+					"en": "Refining and processing Stiratite can yield Copper, Iron, Cobalt, Tin, Titanium, Aluminium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-bob",
+					"en": "Refining and processing Crotinnium can yield Copper, Iron, Lead, Silver, Gold, Titanium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-bob",
+					"en": "Refining and processing Rubyte can yield Lead, Nickel, Aluminium, Gold, Titanium, Tungsten",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-bob",
+					"en": "Refining and processing Bobmonium can yield Tin, Quartz, Cobalt, Zinc, Aluminium and Tungsten",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"ore-refining.cfg": {
+			"entity-name": [
+				{
+					"var": "burner-ore-crusher",
+					"en": "Burner Ore Crusher",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher",
+					"en": "Ore Crusher",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher-2",
+					"en": "Ore Crusher Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher-3",
+					"en": "Ore Crusher Mk 3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell",
+					"en": "Floatation Cell",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell-2",
+					"en": "Floatation Cell Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell-3",
+					"en": "Floatation Cell Mk 3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant",
+					"en": "Leaching Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant-2",
+					"en": "Leaching Plant Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant-3",
+					"en": "Leaching Plant Mk 3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery",
+					"en": "Ore Refinery",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery-2",
+					"en": "Ore Refinery Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery-3",
+					"en": "Ore Refinery Mk 3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility",
+					"en": "Ore Sorting Facility",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-2",
+					"en": "Ore Sorting Facility Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-3",
+					"en": "Ore Sorting Facility Mk 3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-4",
+					"en": "Ore Sorting Facility Mk 4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquifier",
+					"en": "Liquifier",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquifier-2",
+					"en": "Liquifier Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquifier-3",
+					"en": "Liquifier Mk 3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquifier-4",
+					"en": "Liquifier Mk 4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filtration-unit",
+					"en": "Filtration Unit",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filtration-unit-2",
+					"en": "Filtration Unit Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystallizer",
+					"en": "Crystallizer",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystallizer-2",
+					"en": "Crystallizer Mk 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-extractor",
+					"en": "Thermal Water Extractor",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "slag",
+					"en": "Slag",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filter-frame",
+					"en": "Filter Frame",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filter-coal",
+					"en": "Coal Filter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filter-ceramic",
+					"en": "Ceramic Filter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filter-ceramic-used",
+					"en": "Spend Ceramic Filter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-water-barrel",
+					"en": "Thermal Water Barrel",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-crushed",
+					"en": "Crushed Saphirite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-crushed",
+					"en": "Crushed Jivolite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-crushed",
+					"en": "Crushed Stiratite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-crushed",
+					"en": "Crushed Crotinnium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-crushed",
+					"en": "Crushed Rubyte",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-crushed",
+					"en": "Crushed Bobmonium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "stone-crushed",
+					"en": "Crushed Stone",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-chunk",
+					"en": "Saphirite Chunks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-chunk",
+					"en": "Jivolite Chunks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-chunk",
+					"en": "Stiratite Chunks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-chunk",
+					"en": "Crotinnium Chunks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-chunk",
+					"en": "Rubyte Chunks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-chunk",
+					"en": "Bobmonium Chunks",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-crystal",
+					"en": "Saphirite Crystals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-crystal",
+					"en": "Jivolite Crystals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-crystal",
+					"en": "Stiratite Crystals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-crystal",
+					"en": "Crotinnium Crystals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-crystal",
+					"en": "Rubyte Crystals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-crystal",
+					"en": "Bobmonium Crystals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-pure",
+					"en": "Purified Saphirite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-pure",
+					"en": "Purified Jivolite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-pure",
+					"en": "Purified Stiratite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-pure",
+					"en": "Purified Crotinnium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-pure",
+					"en": "Purified Rubyte",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-pure",
+					"en": "Purified Bobmonium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-brown",
+					"en": "Mineral Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalysator-green",
+					"en": "Crystal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-blue",
+					"en": "Blue Geode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-cyan",
+					"en": "Cyan Geode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-lightgreen",
+					"en": "Lightgreen Geode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-purple",
+					"en": "Purple Geode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-red",
+					"en": "Red Geode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-yellow",
+					"en": "Yellow Geode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-void",
+					"en": "Something went wrong",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-iron-nugget",
+					"en": "Iron Nugget",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-iron-pebbles",
+					"en": "Iron Pebbles",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-iron-slag",
+					"en": "Iron Slag",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-copper-nugget",
+					"en": "Copper Nugget",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-copper-pebbles",
+					"en": "Copper Pebbles",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-copper-slag",
+					"en": "Copper Slag",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"fluid-name": [
+				{
+					"var": "thermal-water",
+					"en": "Thermal Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-slurry",
+					"en": "Slag Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "mineral-sludge",
+					"en": "Mineral Sludge",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-slurry",
+					"en": "Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-seedling",
+					"en": "Crystal Seedling",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-matrix",
+					"en": "Crystal Matrix",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [
+				{
+					"var": "angelsore1-crushed",
+					"en": "Saphirite Ore Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-crushed-hand",
+					"en": "Saphirite Ore Crushing by Hand",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-crushed",
+					"en": "Jivolite Ore Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-crushed-hand",
+					"en": "Stiratite Ore Crushing by Hand",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-crushed",
+					"en": "Stiratite Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-crushed",
+					"en": "Crotinnium Ore Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-crushed",
+					"en": "Rubyte Ore Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-crushed",
+					"en": "Bobmonium Ore Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-chunk",
+					"en": "Saphirite Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-chunk",
+					"en": "Jivolite Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-chunk",
+					"en": "Stiratite Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-chunk",
+					"en": "Crotinnium Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-chunk",
+					"en": "Rubyte Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-chunk",
+					"en": "Bobmonium Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-crystal",
+					"en": "Saphirite Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-crystal",
+					"en": "Jivolite Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-crystal",
+					"en": "Stiratite Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-crystal",
+					"en": "Crotinnium Ore Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-crystal",
+					"en": "Rubyte Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-crystal",
+					"en": "Bobmonium Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-pure",
+					"en": "Saphirite Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-pure",
+					"en": "Jivolite Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-pure",
+					"en": "Stiratite Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-pure",
+					"en": "Crotinnium Ore Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-pure",
+					"en": "Rubyte Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-pure",
+					"en": "Bobmonium Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-crushed-processing",
+					"en": "Crushed Saphirite Ore Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-crushed-processing",
+					"en": "Crushed Jivolite Ore Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-crushed-processing",
+					"en": "Crushed Stiratite Ore Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-crushed-processing",
+					"en": "Crushed Crotinnium Ore Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-crushed-processing",
+					"en": "Crushed Rubyte Ore Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-crushed-processing",
+					"en": "Crushed Bobmonium Ore Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-chunk-processing",
+					"en": "Saphirite Chunks Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-chunk-processing",
+					"en": "Jivolite Chunks Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-chunk-processing",
+					"en": "Stiratite Chunks Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-chunk-processing",
+					"en": "Crotinnium Chunks Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-chunk-processing",
+					"en": "Rubyte Chunks Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-chunk-processing",
+					"en": "Bobmonium Chunks Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-crystal-processing",
+					"en": "Saphirite Crystals Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-crystal-processing",
+					"en": "Jivolite Crystals Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-crystal-processing",
+					"en": "Stiratite Crystals Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-crystal-processing",
+					"en": "Crotinnium Crystals Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-crystal-processing",
+					"en": "Rubyte Crystals Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-crystal-processing",
+					"en": "Bobmonium Crystals Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore1-pure-processing",
+					"en": "Purified Saphirite Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore2-pure-processing",
+					"en": "Purified Jivolite Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore3-pure-processing",
+					"en": "Purified Stiratite Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore4-pure-processing",
+					"en": "Purified Crotinnium Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore5-pure-processing",
+					"en": "Purified Rubyte Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore6-pure-processing",
+					"en": "Purified Bobmonium Sorting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-blue-processing",
+					"en": "Blue Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-cyan-processing",
+					"en": "Cyan Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-lightgreen-processing",
+					"en": "Lightgreen Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-purple-processing",
+					"en": "Purple Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-red-processing",
+					"en": "Red Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-yellow-processing",
+					"en": "Yellow Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-blue-liquify",
+					"en": "Liquifying Blue Geode to Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-cyan-liquify",
+					"en": "Liquifying Cyan Geode to Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-lightgreen-liquify",
+					"en": "Liquifying Lightgreen Geode to Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-purple-liquify",
+					"en": "Liquifying Purple Geode to Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-red-liquify",
+					"en": "Liquifying Red Geode to Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-yellow-liquify",
+					"en": "Liquifying Yellow Geode to Crystal Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-water-filtering-1",
+					"en": "Thermal Water Coal Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-water-filtering-2",
+					"en": "Thermal Water Ceramic Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-slurry-filtering-1",
+					"en": "Crystal Slurry Coal Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-slurry-filtering-2",
+					"en": "Crystal Slurry Ceramic Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-slurry-filtering-conversion-1",
+					"en": "Crystal Slurry to Mineral Sludge Coal Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystal-slurry-filtering-conversion-2",
+					"en": "Crystal Slurry to Mineral Sludge Ceramic Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore7-crystallization-1",
+					"en": "Crystallizing to __1__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore7-crystallization-2",
+					"en": "Crystallizing to __1__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore7-crystallization-3",
+					"en": "Crystallizing to __1__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore7-crystallization-4",
+					"en": "Crystallizing to __1__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore7-crystallization-5",
+					"en": "Crystallizing to __1__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angelsore7-crystallization-6",
+					"en": "Crystallizing to __1__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-dissolution",
+					"en": "Liquify Slag to Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "stone-crushed-dissolution",
+					"en": "Liquify Crushed Stone to Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-filtering-1",
+					"en": "Slurry Coal Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-filtering-2",
+					"en": "Slurry Ceramic Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-stone",
+					"en": "Slag Processing to Stone",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-1",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-2",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-3",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-4",
+					"en": "Crystallizing to __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-5",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-6",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-7",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-8",
+					"en": "Crystallizing to __1__ __2__ __3__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-up",
+					"en": "Crystallizing to Uranium Power",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-yi",
+					"en": "Crystallizing to Yuoki Industries",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing-nuc",
+					"en": "Crystallizing to Nucular",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-category-name": [],
+			"item-group-name": [
+				{
+					"var": "resource-refining",
+					"en": "Resource Refining",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "ore-crushing",
+					"en": "Mechanical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation",
+					"en": "Hydro Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching",
+					"en": "Chemical Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refining",
+					"en": "Thermal Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "advanced-ore-refining",
+					"en": "Advanced Ore Refining",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-water-extraction",
+					"en": "Thermal Water Extraction",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "slag-processing",
+					"en": "Slag Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-processing",
+					"en": "Geode Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "geode-crystallization",
+					"en": "Geode Crystallization",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-description": [
+				{
+					"var": "burner-ore-crusher",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher-2",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher-3",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell",
+					"en": "Further refines crushed ores using froth floatation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell-2",
+					"en": "Further refines crushed ores using froth floatation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell-3",
+					"en": "Further refines crushed ores using froth floatation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant",
+					"en": "Further refines ore chunks using chemical leaching",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant-2",
+					"en": "Further refines ore chunks using chemical leaching",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant-3",
+					"en": "Further refines ore chunks using chemical leaching",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery",
+					"en": "Further refines ore crystals using heating and roasting processes",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery-2",
+					"en": "Further refines ore crystals using heating and roasting processes",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery-3",
+					"en": "Further refines ore crystals using heating and roasting processes",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-2",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-3",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-4",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filtration-unit",
+					"en": "Filters out impurities from liquids",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystallizer",
+					"en": "Forces the crystallisation of higher elements from chemical solutions",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-extractor",
+					"en": "Uses a fissure to extract mineral rich thermal water from deep underground",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-crushed",
+					"en": "Can be smelted directly, sorted or refined further - __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-crushed",
+					"en": "Can be sorted or refined further - __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-crushed",
+					"en": "Can be smelted directly, sorted or refined further - __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-crushed",
+					"en": "Can be sorted or refined further - __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-crushed",
+					"en": "Can be smelted directly, sorted or refined further - __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-crushed",
+					"en": "Can be smelted directly, sorted or refined further - __1__ __2__ __3__ __4__ __5__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-chunk",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-chunk",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-chunk",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-chunk",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-chunk",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-chunk",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-crystal",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-crystal",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-crystal",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-crystal",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-crystal",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-crystal",
+					"en": "Can be sorted for smeltable ores or refined further - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore1-pure",
+					"en": "Can be sorted for smeltable ores - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore2-pure",
+					"en": "Can be sorted for smeltable ores - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore3-pure",
+					"en": "Can be sorted for smeltable ores - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore4-pure",
+					"en": "Can be sorted for smeltable ores - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__ __12__ __13__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore5-pure",
+					"en": "Can be sorted for smeltable ores - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-ore6-pure",
+					"en": "Can be sorted for smeltable ores - __1__ __2__ __3__ __4__ __5__ __6__ __7__ __8__ __9__ __10__ __11__",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-void",
+					"en": "You are missing dependencies or something went wrong, if the error consists report back to the Bug thread in the forum",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-dot",
+					"en": ",",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-and",
+					"en": "&",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-slag",
+					"en": "Slag",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-iron",
+					"en": "Iron",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-copper",
+					"en": "Copper",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-tin",
+					"en": "Tin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-lead",
+					"en": "Lead",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-quartz",
+					"en": "Quartz",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-nickel",
+					"en": "Nickel",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-rutile",
+					"en": "Rutile",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-bauxite",
+					"en": "Bauxite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-tungsten",
+					"en": "Tungsten",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-zinc",
+					"en": "Zinc",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-gold",
+					"en": "Gold",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-silver",
+					"en": "Silver",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-cobalt",
+					"en": "Cobalt",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-yi1",
+					"en": "N4-Material",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-yi2",
+					"en": "N7-Material",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-upu",
+					"en": "Uraninite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-upf",
+					"en": "Fluorite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "loc-nucu",
+					"en": "Uranium",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-description": [
+				{
+					"var": "burner-ore-crusher",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher-2",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-crusher-3",
+					"en": "Don't stick your fingers in. Crushes raw ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell",
+					"en": "Further refines crushed ores using froth floatation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell-2",
+					"en": "Further refines crushed ores using froth floatation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-floatation-cell-3",
+					"en": "Further refines crushed ores using froth floatation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant",
+					"en": "Further refines ore chunks using chemical leaching",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant-2",
+					"en": "Further refines ore chunks using chemical leaching",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-leaching-plant-3",
+					"en": "Further refines ore chunks using chemical leaching",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery",
+					"en": "Further refines ore crystals using heating and roasting processes",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery-2",
+					"en": "Further refines ore crystals using heating and roasting processes",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-refinery-3",
+					"en": "Further refines ore crystals using heating and roasting processes",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-2",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-3",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-sorting-facility-4",
+					"en": "Sorts refined raw ores into smeltable ores",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filtration-unit",
+					"en": "Filters out impurities from liquids",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "crystallizer",
+					"en": "Forces the crystallisation of higher elements from chemical solutions",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-extractor",
+					"en": "Uses a fissure to extract mineral rich thermal water from deep underground",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"ore-silos.cfg": {
+			"entity-name": [
+				{
+					"var": "silo-ore1",
+					"en": "Saphirite Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore2",
+					"en": "Jivolite Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore3",
+					"en": "Stiratite Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore4",
+					"en": "Crotinium Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore5",
+					"en": "Rubyte Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore6",
+					"en": "Bobmonium Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-coal",
+					"en": "Coal Silo",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "silo-ore1",
+					"en": "Saphirite Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore2",
+					"en": "Jivolite Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore3",
+					"en": "Stiratite Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore4",
+					"en": "Crotinium Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore5",
+					"en": "Rubyte Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-ore6",
+					"en": "Bobmonium Silo",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silo-coal",
+					"en": "Coal Silo",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "ore-silos",
+					"en": "Ore Silos",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"petrochem.cfg": {
+			"fluid-name": [
+				{
+					"var": "gas-hydrogen",
+					"en": "Hydrogen Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-oxygen",
+					"en": "Oxygen Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-chlorine",
+					"en": "Chlorine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-hydrogen-chloride",
+					"en": "Hydrogen Chloride Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-hydrochloric-acid",
+					"en": "Hydrochloric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-carbon-monoxide",
+					"en": "Carbon Monoxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-carbon-dioxide",
+					"en": "Carbon Dioxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-hydrofluoric-acid",
+					"en": "Hydrofluoric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-allylchlorid",
+					"en": "Allylchlorid Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-epichlorhydrin",
+					"en": "Epichlorhydrin Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-glycerol",
+					"en": "Glycerol Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-perchloric-acid",
+					"en": "Perchloric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-methane",
+					"en": "Methane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ethane",
+					"en": "Ethane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-butane",
+					"en": "Butane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-propene",
+					"en": "Propene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-naphtha",
+					"en": "Naphtha",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-mineral-oil",
+					"en": "Base Mineral Oil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-fuel-oil",
+					"en": "Fuel Oil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-methanol",
+					"en": "Methanol Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ethylene",
+					"en": "Ethylene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-benzene",
+					"en": "Benzene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-synthesis",
+					"en": "Synthesis Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-butadiene",
+					"en": "Butadiene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-phenol",
+					"en": "Phenol Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ethylbenzene",
+					"en": "Ethylbenzene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-styrene",
+					"en": "Styrene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-formaldehyde",
+					"en": "Formaldehyde Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-polyethylene",
+					"en": "Polyethylene Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-chlor-methane",
+					"en": "Chlor Methane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-compressed-air",
+					"en": "Compressed Air",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-nitrogen",
+					"en": "Nitrogen Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ammonia",
+					"en": "Ammonia Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-nitrogen-dioxide",
+					"en": "Nitrogen Dioxide Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ammonium-chloride",
+					"en": "Ammonium Chloride Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-urea",
+					"en": "Urea Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-melamine",
+					"en": "Melamine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-nitric-acid",
+					"en": "Nitric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-monochloramine",
+					"en": "Monochloramine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-hydrazine",
+					"en": "Hydrazine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-hypochlorite",
+					"en": "Sodium Hypochlorite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-methylamine",
+					"en": "Methylamine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-dimethylamine",
+					"en": "Dimethylamine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-dimethylhydrazine",
+					"en": "Dimethylhydrazine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-natural-1",
+					"en": "Natural Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-multi-phase-oil",
+					"en": "Multi Phase Oil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-raw-1",
+					"en": "Raw Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-condensates",
+					"en": "Gas Condensates",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-acid",
+					"en": "Acid Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-ngl",
+					"en": "Natural Gas Liquids",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-residual",
+					"en": "Residual Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-hydrogen-sulfide",
+					"en": "Hydrogen Sulfide Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-sulfur-dioxide",
+					"en": "Sulfur Dioxide Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-sulfuric-acid",
+					"en": "Sulfuric Acid",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [
+				{
+					"var": "dirt-water-separation",
+					"en": "Dirt Water Electrolysis: Hydrogen, Oxygen, Slag",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-separation",
+					"en": "Water Electrolysis: Hydrogen, Oxygen",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "carbon-separation-1",
+					"en": "Carbon Monoxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "carbon-separation-2",
+					"en": "Carbon Dioxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "coke-purification",
+					"en": "Carbon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "coal-crushed",
+					"en": "Crushed Coal",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-coke",
+					"en": "Coke",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-coke-sulfur",
+					"en": "Clean Coal to Coke, Sulfuric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-coke",
+					"en": "Coke Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "coal-cracking-1",
+					"en": "Coal Cracking Gasification: Coke, Hydrogen Sulfide Gas, Benzene Gas, Methane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "coal-cracking-2",
+					"en": "Coal Cracking Bergius Process: Coke, Metal Catalyst Carrier, Naphtha, NGL, Mineral-Oil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "coal-cracking-3",
+					"en": "Coal Cracking Fischer Tropsch Process: Synthesis Gas, Carbon Dioxide, Hydrogen Sulfide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-separation",
+					"en": "Natural Gas Seperation: Raw Gas, Condensates, Sulfuric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refining",
+					"en": "Raw Gas Refining: Acid Gas, NGL",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-fractioning",
+					"en": "Gas Fractioning: Methane Gas, Ethane Gas, Butane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "condensates-refining",
+					"en": "Condensates Advanced Cracking: Coke, Naphtha, Methane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-synthesis-separation",
+					"en": "Synthesis Gas Separation: Carbon Monoxide, Hydrogen",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-synthesis-methanation",
+					"en": "Synthesis Gas Catalytic Methanation: Methane Gas, Ethane Gas, Butane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-synthesis-methanol",
+					"en": "Catalytic Synthesis to Methanol",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-residual",
+					"en": "Steam Cracking Residual Gas to SynGas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-separation",
+					"en": "Oil Seperation: Raw Gas, Crude Oil, Sulfuric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-refining",
+					"en": "Oil Refining: Mineral Oil, Fuel Oil, Naphtha",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "advanced-oil-refining",
+					"en": "Advanced Oil Refining: Mineral Oil, Fuel Oil, Naphtha",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "condensates-oil-refining",
+					"en": "Oil And Condensates Refining: Mineral Oil, Fuel Oil, Naphtha",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-naphtha",
+					"en": "Steam Cracking Naphtha to SynGas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-mineral-oil-catalyst",
+					"en": "Catalytic Cracking of Naphtha to Mineral Oil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-naphtha-catalyst",
+					"en": "Catalytic Synthesis of Naphtha",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-mineral-oil",
+					"en": "Steam Cracking Mineral Oil to SynGas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-fuel-oil",
+					"en": "Steam Cracking Fuel Oil to SynGas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "mineral-oil-lubricant",
+					"en": "Lubricant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-methane",
+					"en": "Steam Cracking Methane: Methanol Gas, Residual Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-ethane",
+					"en": "Steam Cracking Ethane: Ethylene Gas, Residual Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracking-butane",
+					"en": "Steam Cracking Butane: Benzene Gas, Residual Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-steam-cracking-butane",
+					"en": "Catalytic Cracking Naphtha to Butadiene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-steam-cracking-naphtha",
+					"en": "Catalytic Cracking Naphtha to Propene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-benzene-catalyst",
+					"en": "Catalytic Synthesis Benzene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-polyehtylene-catalyst",
+					"en": "Catalytic Synthesis Polyethylene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-methanol-catalyst",
+					"en": "Catalytic Synthesis Methanol",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-formaldehyde-catalyst",
+					"en": "Catalytic Synthesis Formaldehyde",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-styrene-catalyst",
+					"en": "Catalytic Synthesis Styrene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-phenol-catalyst",
+					"en": "Catalytic Synthesis Phenol",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-propene-synthesis",
+					"en": "Synthesis Propene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ethylbenzene-catalyst",
+					"en": "Catalytic Synthesis Ethylbenzene",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-saline-separation",
+					"en": "Saline Water Electrolysis: Chlorine, Hydrogen, Sodium Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-salt-separation",
+					"en": "Molten Salt Electrolysis: Chlorine, Sodium Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-hydrogen-chloride-separation",
+					"en": "Separation of Hydrogen Chloride: Chlorine, Hydrogen",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-chlor-methane",
+					"en": "Synthesis Chlor Methane",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-hydrogen-chloride",
+					"en": "Synthesis Hydrogen Chloride",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-hydrochloric-acid",
+					"en": "Synthesis Hydrochloric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-allylchlorid",
+					"en": "Synthesis Allylchlorid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-epichlorhydrin",
+					"en": "Synthesis Epichlorhydrin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-glycerol",
+					"en": "Synthesis Glycerol",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-perchlorate",
+					"en": "Sodium Perchlorate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-plastic-1",
+					"en": "Propene Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-plastic-2",
+					"en": "Polyethylene Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-plastic-3",
+					"en": "Phenolic Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-resin-1",
+					"en": "Urea Resin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-resin-2",
+					"en": "Melamine Resin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-rubber",
+					"en": "Styrene Rubber",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-calcium-chloride",
+					"en": "Calcium Chloride",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-carrier",
+					"en": "Metal Catalyst Carrier",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-red",
+					"en": "Red Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-green",
+					"en": "Green Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-blue",
+					"en": "Blue Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-yellow",
+					"en": "Yellow Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-acid-catalyst",
+					"en": "Catalytic Cracking Acid Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sulfur",
+					"en": "Synthesis Sulfur",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-sulfur-dioxide",
+					"en": "Synthesis Sulfur Dioxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-sulfur-dioxide-calcium-sulfate",
+					"en": "Synthesis Sulfur Dioxide from Calcium Sulfate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-sulfuric-acid",
+					"en": "Synthesis Sulfuric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-hydrofluoric-acid",
+					"en": "Synthesis Hydrofluoric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "air-filtering",
+					"en": "Air Filtering: Compressed Air",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "air-separation",
+					"en": "Air Separation: Nitrogen Gas, Oxygen Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ammonia",
+					"en": "Ammonia Synthesis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-nitrogen-dioxide",
+					"en": "Nitrogen Dioxide Synthesis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-ammonium-chloride",
+					"en": "Ammonium Chloride Synthesis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-urea",
+					"en": "Urea Synthesis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-melamine",
+					"en": "Melamine Synthesis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-nitric-acid",
+					"en": "Nitric Acid Synthesis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-monochloramine",
+					"en": "Monochloramine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-hydrazine",
+					"en": "Hydrazine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-methylamine",
+					"en": "Methylamine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-dimethylamine",
+					"en": "Dimethylamine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-dimethylhydrazine",
+					"en": "Dimethylhydrazine Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "converter-angels",
+					"en": "Convert __1__ to __2__",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-group-name": [
+				{
+					"var": "petrochem-refining",
+					"en": "Petro Chemical Refining",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-name": [
+				{
+					"var": "advanced-chemical-plant",
+					"en": "Advanced Chemical Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "advanced-chemical-plant-2",
+					"en": "Advanced Chemical Plant MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-flare-stack",
+					"en": "Flare Stack",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-2-way",
+					"en": "2 Way Fluid Splitter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-3-way",
+					"en": "3 Way Fluid Splitter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-pump",
+					"en": "Heavy Pump",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery",
+					"en": "Gas Refinery",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery-2",
+					"en": "Gas Refinery MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery-3",
+					"en": "Gas Refinery MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery-4",
+					"en": "Gas Refinery MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator",
+					"en": "Oil & Gas Separator",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator-2",
+					"en": "Oil & Gas Separator MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator-3",
+					"en": "Oil & Gas Separator MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator-4",
+					"en": "Oil & Gas Separator MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker",
+					"en": "Steam Cracker",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker-2",
+					"en": "Steam Cracker MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker-3",
+					"en": "Steam Cracker MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker-4",
+					"en": "Steam Cracker MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser",
+					"en": "Electrolyser",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser-2",
+					"en": "Electrolyser MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser-3",
+					"en": "Electrolyser MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser-4",
+					"en": "Electrolyser MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-1",
+					"en": "Petrochem Gas Tank",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-2",
+					"en": "Petrochem Oil Tank",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-air-filter",
+					"en": "Air Filter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-air-filter-2",
+					"en": "Air Filter MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "chemical-plant-2",
+					"en": "Chemical Plant MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "chemical-plant-3",
+					"en": "Chemical Plant MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "chemical-plant-4",
+					"en": "Chemical Plant MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-refinery-2",
+					"en": "Oil Refinery MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-refinery-3",
+					"en": "Oil Refinery MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-refinery-4",
+					"en": "Oil Refinery MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-check",
+					"en": "Check Valve",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-return",
+					"en": "Return Valve",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-overflow",
+					"en": "Overflow Valve",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-converter",
+					"en": "Converter Valve",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "solid-sodium-hydroxide",
+					"en": "Sodium Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-hypochlorite",
+					"en": "Sodium Hypochlorite",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium",
+					"en": "Sodium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-carbonate",
+					"en": "Sodium Carbonate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-cyanide",
+					"en": "Sodium Cyanide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-sulfate",
+					"en": "Sodium Sulfate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-calcium-sulfate",
+					"en": "Calcium Sulfate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-calcium-chloride",
+					"en": "Calcium Chloride",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-chlorate",
+					"en": "Sodium Chlorate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-perchlorate",
+					"en": "Sodium Perchlorate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-oil-residual",
+					"en": "Oil Residuals",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-salt",
+					"en": "Salt (Sodium Chloride)",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-lithium",
+					"en": "Lithia Salt (Lithium Chloride)",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-plastic-1",
+					"en": "Polypropylen Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-plastic-2",
+					"en": "Phenolic Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-plastic-3",
+					"en": "Polyethylene Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-resin-1",
+					"en": "Resin 1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-resin-2",
+					"en": "Resin 2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-rubber",
+					"en": "Rubber",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "fluorite-ore",
+					"en": "Fluorite Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "coal-crushed",
+					"en": "Crushed Coal",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-carbon",
+					"en": "Carbon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-coke",
+					"en": "Coke",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-coke",
+					"en": "Coke Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-carrier",
+					"en": "Metal Catalyst Carrier",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-red",
+					"en": "Red Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-green",
+					"en": "Green Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-blue",
+					"en": "Blue Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "catalyst-metal-yellow",
+					"en": "Yellow Metal Catalyst",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "chemical-void",
+					"en": "Chemical Void",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "advanced-chemical-plant",
+					"en": "Advanced Chemical Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "advanced-chemical-plant-2",
+					"en": "Advanced Chemical Plant MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-flare-stack",
+					"en": "Flare Stack",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-2-way",
+					"en": "2 Way Fluid Splitter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-3-way",
+					"en": "3 Way Fluid Splitter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "heavy-pump",
+					"en": "Heavy Pump",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery",
+					"en": "Gas Refinery",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery-2",
+					"en": "Gas Refinery MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery-3",
+					"en": "Gas Refinery MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-refinery-4",
+					"en": "Gas Refinery MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator",
+					"en": "Oil & Gas Separator",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator-2",
+					"en": "Oil & Gas Separator MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator-3",
+					"en": "Oil & Gas Separator MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "separator-4",
+					"en": "Oil & Gas Separator MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker",
+					"en": "Steam Cracker",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker-2",
+					"en": "Steam Cracker MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker-3",
+					"en": "Steam Cracker MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "steam-cracker-4",
+					"en": "Steam Cracker MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser",
+					"en": "Electrolyser",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser-2",
+					"en": "Electrolyser MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser-3",
+					"en": "Electrolyser MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-electrolyser-4",
+					"en": "Electrolyser MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-1",
+					"en": "Petrochem Gas Tank",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-2",
+					"en": "Petrochem Oil Tank",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-air-filter",
+					"en": "Air Filter",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-air-filter-2",
+					"en": "Air Filter MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-check",
+					"en": "Check Valve",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-return",
+					"en": "Non Return Valve",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-overflow",
+					"en": "Overflow Valve",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-converter",
+					"en": "Converter Valve",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-description": [
+				{
+					"var": "angels-flare-stack",
+					"en": "Burns excess chemicals (Chemical void)",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-2-way",
+					"en": "Splits fluids between two outputs, stops working if one output is blocked",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-3-way",
+					"en": "Splits fluids between three outputs, stops working if one output is blocked",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-check",
+					"en": "Pipe section that can hold 100u and can be connected to a wire",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-return",
+					"en": "Only allows one directional flow",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-overflow",
+					"en": "Allows flow if the input side is above 80%",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-converter",
+					"en": "Converts Base Game to Angels Mod fluids and vice versa",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-1",
+					"en": "Storage Tank to hold any fluid. Capacity 7500u",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-2",
+					"en": "Storage Tank to hold any fluid. Capacity 4750u",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "angels-fluid-control",
+					"en": "Fluid Control",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "basic-chemistry",
+					"en": "Basic Chemistry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-sulfur-processing",
+					"en": "Sulfur Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-nitrogen-processing",
+					"en": "Nitrogen Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "chlorine-processing",
+					"en": "Chlorine Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-gas-extraction",
+					"en": "Gas and Oil Extraction",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-oil-barreling",
+					"en": "Gas and Oil Barreling",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-oil-processing",
+					"en": "Oil Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-advanced-oil-processing",
+					"en": "Advanced Oil Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-processing",
+					"en": "Gas Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-flare-stack",
+					"en": "Flare Stack",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-advanced-chemistry",
+					"en": "Advanced Chemistry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-coal-processing",
+					"en": "Coal Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-coal-cracking",
+					"en": "Coal Cracking",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-synthesis",
+					"en": "Synthesis Gas Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-steam-cracking",
+					"en": "Gas Steam Cracking",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "oil-steam-cracking",
+					"en": "Oil Steam Cracking",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "plastic",
+					"en": "Plastic",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "resin",
+					"en": "Resin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "rubber",
+					"en": "Rubber",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "sodium-processing",
+					"en": "Sodium Processing",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-description": [
+				{
+					"var": "angels-fluid-control",
+					"en": "Provides utilities to control the flow of fluids",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "basic-chemistry",
+					"en": "Knowledge to produce and handle the basic ingredients for chemistry",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-description": [
+				{
+					"var": "angels-flare-stack",
+					"en": "Burns excess chemicals (Chemical void)",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-2-way",
+					"en": "Splits fluids between two outputs, stops working if one output is blocked",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-splitter-3-way",
+					"en": "Splits fluids between three outputs, stops working if one output is blocked",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-check",
+					"en": "Pipe section that can hold 100u and can be connected to a wire",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-return",
+					"en": "Only allows one directional flow",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-overflow",
+					"en": "Allows flow if the input side is above 80%",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "valve-converter",
+					"en": "Converts Base Game to Angels Mod fluids and vice versa",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-1",
+					"en": "Storage Tank to hold any fluid. Capacity 7500u",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-storage-tank-2",
+					"en": "Storage Tank to hold any fluid. Capacity 4750u",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"petrotrain.cfg": {
+			"entity-name": [
+				{
+					"var": "petro-locomotive-1",
+					"en": "PetroChem Locomotive",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "petro-locomotive-1",
+					"en": "PetroChem Locomotive",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [
+				{
+					"var": "petro-locomotive-1",
+					"en": "PetroChem Locomotive",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-category-name": [],
+			"item-group-name": [],
+			"item-subgroup-name": [],
+			"technology-name": [
+				{
+					"var": "angels-petro-train",
+					"en": "PetroChem Trains",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"pressure-tanks.cfg": {
+			"entity-name": [
+				{
+					"var": "angels-pressure-tank-1",
+					"en": "Jax 35 - Pressure Tank",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "angels-pressure-tank-1",
+					"en": "Jax 35 - Pressure Tank",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "pressure-tanks",
+					"en": "Pressure Tanks",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"smelting.cfg": {
+			"fluid-name": [
+				{
+					"var": "liquid-molten-aluminium",
+					"en": "Molten Aluminium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-chrome",
+					"en": "Molten Chrome",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-cobalt",
+					"en": "Molten Cobalt",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-copper",
+					"en": "Molten Copper",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-gold",
+					"en": "Molten Gold",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-iron",
+					"en": "Molten Iron",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-lead",
+					"en": "Molten Lead",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-manganese",
+					"en": "Molten Manganese",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-nickel",
+					"en": "Molten Nickel",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-platinum",
+					"en": "Molten Platinum",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-silicon",
+					"en": "Molten Silicon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-silver",
+					"en": "Molten Silver",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-solder",
+					"en": "Molten Solder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-steel",
+					"en": "Molten Steel",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-tin",
+					"en": "Molten Tin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-titanium",
+					"en": "Molten Titanium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-tungsten",
+					"en": "Molten Tungsten",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-molten-zinc",
+					"en": "Molten Zinc",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-chlorauric-acid",
+					"en": "Chlorauric Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-hexachloroplatinic-acid",
+					"en": "Hexachloroplatinic Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-silane",
+					"en": "Silane Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-trichlorosilane",
+					"en": "Trichlorosilane",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-titanium-tetrachloride",
+					"en": "Titanium Tetrachloride",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gas-tungsten-hexafluoride",
+					"en": "Tungsten Hexafluoride Gas",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-tungstic-acid",
+					"en": "Tungstic Acid",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "liquid-hexafluorosilicic-acid",
+					"en": "Hexafluorosilicic Acid",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [],
+			"item-group-name": [
+				{
+					"var": "angels-smelting",
+					"en": "Metallurgy Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-casting",
+					"en": "Metallurgy Casting",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-name": [
+				{
+					"var": "blast-furnace",
+					"en": "Blast Furnace MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "blast-furnace-2",
+					"en": "Blast Furnace MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "blast-furnace-3",
+					"en": "Blast Furnace MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "blast-furnace-4",
+					"en": "Blast Furnace MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-chemical-furnace",
+					"en": "Chemical Furnace MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-chemical-furnace-2",
+					"en": "Chemical Furnace MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-chemical-furnace-3",
+					"en": "Chemical Furnace MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-chemical-furnace-4",
+					"en": "Chemical Furnace MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-mixer",
+					"en": "Powder Mixer MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-mixer-2",
+					"en": "Powder Mixer MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-mixer-3",
+					"en": "Powder Mixer MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-mixer-4",
+					"en": "Powder Mixer MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "induction-furnace",
+					"en": "Induction Furnace MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "induction-furnace-2",
+					"en": "Induction Furnace MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "induction-furnace-3",
+					"en": "Induction Furnace MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "induction-furnace-4",
+					"en": "Induction Furnace MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "casting-machine",
+					"en": "Casting Machine MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "casting-machine-2",
+					"en": "Casting Machine MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "casting-machine-3",
+					"en": "Casting Machine MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "casting-machine-4",
+					"en": "Casting Machine MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-processing-machine",
+					"en": "Ore Processing Machine MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-processing-machine-2",
+					"en": "Ore Processing Machine MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-processing-machine-3",
+					"en": "Ore Processing Machine MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-processing-machine-4",
+					"en": "Ore Processing Machine MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-press",
+					"en": "Pellet Press MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-press-2",
+					"en": "Pellet Press MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-press-3",
+					"en": "Pellet Press MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-press-4",
+					"en": "Pellet Press MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "sintering-oven",
+					"en": "Sintering Oven MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "sintering-oven-2",
+					"en": "Sintering Oven MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "sintering-oven-3",
+					"en": "Sintering Oven MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "sintering-oven-4",
+					"en": "Sintering Oven MK4",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "strand-casting-machine",
+					"en": "Strand Casting Machine MK1",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "strand-casting-machine-2",
+					"en": "Strand Casting Machine MK2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "strand-casting-machine-3",
+					"en": "Strand Casting Machine MK3",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "strand-casting-machine-4",
+					"en": "Strand Casting Machine MK4",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "bauxite-ore",
+					"en": "Aluminium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-aluminium",
+					"en": "Processed Aluminium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-aluminium",
+					"en": "Aluminium Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-aluminate",
+					"en": "Sodium Aluminate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-aluminium-hydroxide",
+					"en": "Aluminium Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-aluminium-oxide",
+					"en": "Alumina",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-aluminium",
+					"en": "Aluminium Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-aluminium",
+					"en": "Aluminium Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-aluminium",
+					"en": "Aluminium Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "chrome-ore",
+					"en": "Chrome Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-chrome",
+					"en": "Processed Chrome",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-chrome",
+					"en": "Chrome Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-chromate",
+					"en": "Chromate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-dichromate",
+					"en": "Dichromate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-chrome-oxide",
+					"en": "Chrome Oxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-chrome",
+					"en": "Chrome Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-chrome",
+					"en": "Chrome Powder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-chrome",
+					"en": "Chrome Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-chrome",
+					"en": "Chrome Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cobalt-ore",
+					"en": "Cobalt Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-cobalt",
+					"en": "Processed Cobalt",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-cobalt",
+					"en": "Cobalt Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-cobalt-hydroxide",
+					"en": "Cobalt Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-cobalt-oxide",
+					"en": "Cobalt Oxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-cobalt",
+					"en": "Cobalt Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-cobalt",
+					"en": "Cobalt Powder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-cobalt",
+					"en": "Cobalt Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-cobalt",
+					"en": "Cobalt Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-copper",
+					"en": "Processed Copper",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-copper",
+					"en": "Copper Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "anode-copper",
+					"en": "Copper Anode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-copper",
+					"en": "Copper Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-copper",
+					"en": "Copper Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-wire-coil-copper",
+					"en": "Copper Wire Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "gold-ore",
+					"en": "Gold Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-gold",
+					"en": "Processed Gold",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-gold",
+					"en": "Gold Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cathode-gold",
+					"en": "Gold Cathode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-gold-cyanide",
+					"en": "Sodium Gold Cyanide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-gold",
+					"en": "Gold Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-gold",
+					"en": "Gold Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-gold",
+					"en": "Gold Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-wire-coil-gold",
+					"en": "Gold Wire Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-iron",
+					"en": "Processed Iron",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-iron",
+					"en": "Iron Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-iron-hydroxide",
+					"en": "Iron Hydroxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-iron",
+					"en": "Iron Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-iron",
+					"en": "Iron Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "lead-ore",
+					"en": "Lead Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-lead",
+					"en": "Processed Lead",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-lead",
+					"en": "Lead Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-lead-oxide",
+					"en": "Lead Oxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "anode-lead",
+					"en": "Lead Anode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-lead",
+					"en": "Lead Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-lead",
+					"en": "Lead Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "manganese-ore",
+					"en": "Manganese Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-manganese",
+					"en": "Processed Manganese",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-manganese",
+					"en": "Manganese Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-manganese-oxide",
+					"en": "Manganese Oxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cathode-manganese",
+					"en": "Manganese Cathode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-manganese-sulfate",
+					"en": "Manganese Sulfate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-manganese",
+					"en": "Manganese Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-manganese",
+					"en": "Manganese Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-manganese",
+					"en": "Manganese Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nickel-ore",
+					"en": "Nickel Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-nickel",
+					"en": "Processed Nickel",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-nickel",
+					"en": "Nickel Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cathode-nickel",
+					"en": "Nickel Cathode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-nickel-carbonyl",
+					"en": "Nickel Carbonyl",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-nickel",
+					"en": "Nickel Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-nickel",
+					"en": "Nickel Powder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-nickel",
+					"en": "Nickel Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-nickel",
+					"en": "Nickel Sheet Roll",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "platinum-ore",
+					"en": "Platinum Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-platinum",
+					"en": "Processed Platinum",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-platinum",
+					"en": "Platinum Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-ammonium-chloroplatinate",
+					"en": "Ammonium Chloroplatinate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-platinum",
+					"en": "Platinum Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-platinum",
+					"en": "Platinum Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-platinum",
+					"en": "Platinum Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-wire-coil-platinum",
+					"en": "Platinum Wire Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "quartz",
+					"en": "Silicon Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-silica",
+					"en": "Processed Silicon",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-silica",
+					"en": "Silicon Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-silicon",
+					"en": "Silicon Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-silicon",
+					"en": "Silicon Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-silicon",
+					"en": "Silicon Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "silver-ore",
+					"en": "Silver Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-silver",
+					"en": "Processed Silver",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-silver",
+					"en": "Silver Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-silver-nitrate",
+					"en": "Silver Nitrate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sodium-silver-cyanide",
+					"en": "Sodium Silver Cyanide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cathode-silver",
+					"en": "Silver Cathode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-silver",
+					"en": "Silver Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-silver",
+					"en": "Silver Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-silver",
+					"en": "Silver Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-wire-coil-silver",
+					"en": "Silver Wire Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-steel",
+					"en": "Steel Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-steel",
+					"en": "Steel Powder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-steel",
+					"en": "Steel Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-steel",
+					"en": "Steel Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-solder",
+					"en": "Solder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "tin-ore",
+					"en": "Tin ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-tin",
+					"en": "Processed Tin",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-tin",
+					"en": "Tin Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-tin",
+					"en": "Tin Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-tin",
+					"en": "Tin Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-wire-coil-tin",
+					"en": "Tin Wire Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "rutile-ore",
+					"en": "Titanium Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-titanium",
+					"en": "Processed Titanium",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-titanium",
+					"en": "Titanium Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "sponge-titanium",
+					"en": "Titanium Sponge",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-titanium",
+					"en": "Titanium Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-titanium",
+					"en": "Titanium Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-titanium",
+					"en": "Titanium Sheet Coil",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "tungsten-ore",
+					"en": "Tungsten Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-tungsten",
+					"en": "Processed Tungsten",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-tungsten",
+					"en": "Tungsten Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-ammonium-paratungstate",
+					"en": "Ammonium Paratungstate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-tungsten-oxide",
+					"en": "Tungsten Oxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "powder-tungsten",
+					"en": "Tungsten Powder",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "casting-powder-tungsten",
+					"en": "Tungsten Powder Mixture",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-tungsten",
+					"en": "Tungsten Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "zinc-ore",
+					"en": "Zinc Ore",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "processed-zinc",
+					"en": "Processed Zinc",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "pellet-zinc",
+					"en": "Zinc Pellet",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-zinc-oxide",
+					"en": "Zinc Oxide",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "cathode-zinc",
+					"en": "Zinc Cathode",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ingot-zinc",
+					"en": "Zinc Ingot",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-plate-zinc",
+					"en": "Zinc Plate",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-roll-zinc",
+					"en": "Zinc Sheet Coil",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "angels-metallurgy",
+					"en": "Metallurgy",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "advanced-metallurgy",
+					"en": "Advanced Metallurgy",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "ore-processing",
+					"en": "Ore Processing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-aluminium-smelting",
+					"en": "Advanced Aluminium Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-chrome-smelting",
+					"en": "Advanced Chrome Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-cobalt-smelting",
+					"en": "Advanced Cobalt Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-copper-smelting",
+					"en": "Advanced Copper Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-gold-smelting",
+					"en": "Advanced Gold Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-iron-smelting",
+					"en": "Advanced Iron Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-lead-smelting",
+					"en": "Advanced Lead Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-manganese-smelting",
+					"en": "Advanced Manganese Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-nickel-smelting",
+					"en": "Advanced Nickel Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-platinum-smelting",
+					"en": "Advanced Platinum Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-silicon-smelting",
+					"en": "Advanced Silicon Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-silver-smelting",
+					"en": "Advanced Silver Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-tin-smelting",
+					"en": "Advanced Tin Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-titanium-smelting",
+					"en": "Advanced Titanium Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-tungsten-smelting",
+					"en": "Advanced Tungsten Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-zinc-smelting",
+					"en": "Advanced Zinc Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-steel-smelting",
+					"en": "Advanced Steel Smelting",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-solder-smelting",
+					"en": "Advanced Solder Smelting",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-description": [],
+			"technology-description": []
+		},
+		"warehouses.cfg": {
+			"entity-name": [
+				{
+					"var": "angels-warehouse",
+					"en": "Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-passive-provider",
+					"en": "Passive Provider Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-active-provider",
+					"en": "Active Provider Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-storage",
+					"en": "Storage Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-requester",
+					"en": "Requester Warehouse",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "angels-warehouse",
+					"en": "Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-passive-provider",
+					"en": "Passive Provider Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-active-provider",
+					"en": "Active Provider Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-storage",
+					"en": "Storage Warehouse",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-warehouse-requester",
+					"en": "Requester Warehouse",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "angels-warehouses",
+					"en": "Warehouses",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-logistic-warehouses",
+					"en": "Logistic Warehouses",
+					"ru": "",
+					"status": 1
+				}
+			]
+		},
+		"water-treatment.cfg": {
+			"fluid-name": [
+				{
+					"var": "water-purified",
+					"en": "Purified Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-mineralized",
+					"en": "Mineralized Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-yellow-waste",
+					"en": "Sulfuric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-red-waste",
+					"en": "Nitric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-green-waste",
+					"en": "Chloric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-greenyellow-waste",
+					"en": "Fluoric Waste Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-saline",
+					"en": "Saline Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-muddy",
+					"en": "Mud Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-concentrated-muddy",
+					"en": "Concentrated Mud Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-slurry",
+					"en": "Nodule Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-concentrated-slurry",
+					"en": "Concentrated Nodule Slurry",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-sludge",
+					"en": "Nodule Sludge",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"recipe-name": [
+				{
+					"var": "water-purification",
+					"en": "Water Purification",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-mineralized",
+					"en": "Water Mineralisation",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "thermal-water-purification",
+					"en": "Thermal Water Purification",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "yellow-waste-water-purification",
+					"en": "Sulfuric Waste Water Purification",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "green-waste-water-purification",
+					"en": "Chloric Waste Water Purification",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "greenyellow-waste-water-purification",
+					"en": "Fluoric Waste Water Purification",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "red-waste-water-purification",
+					"en": "Nitric Waste Water Purification",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "yellow-waste-water-purification-yi",
+					"en": "Sulfuric Waste Water Purification Yuoki Industries",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-water-void-purified",
+					"en": "Void Purified Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-water-void-saline",
+					"en": "Void Saline Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-water-void-mineralized",
+					"en": "Void Mineralized Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-water-void-floatation-waste",
+					"en": "Void Floatation Wate Water",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "salt-water-electrolysis-2",
+					"en": "Saline Water Electrolysis",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-thermal-lithia",
+					"en": "Thermal to Lithia Water Filtering",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-crushed",
+					"en": "Nodule Crushing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "empty-filled-barrel",
+					"en": "Empty __1__ Barrel",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "fill-barrel",
+					"en": "Fill __1__ Barrel",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-description": [],
+			"item-group-name": [
+				{
+					"var": "water-treatment",
+					"en": "Water Treatment",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-barrels",
+					"en": "Barreling and Fluid Control",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-name": [
+				{
+					"var": "hydro-plant",
+					"en": "Hydro Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "hydro-plant-2",
+					"en": "Hydro Plant Mk2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "clarifier",
+					"en": "Clarifier",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "salination-plant",
+					"en": "Salination Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "salination-plant-2",
+					"en": "Salination Plant Mk2",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "seafloor-pump",
+					"en": "Seafloor Pump",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "washing-plant",
+					"en": "Washing Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "washing-plant-2",
+					"en": "Washing Plant MK2",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"item-name": [
+				{
+					"var": "hydro-plant",
+					"en": "Hydro Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "clarifier",
+					"en": "Clarifier",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "salintion-plant",
+					"en": "Salination Plant",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-mud",
+					"en": "Mud",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-limestone",
+					"en": "Limestone",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-sand",
+					"en": "Sand",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-clay",
+					"en": "Clay",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "solid-nodule",
+					"en": "Nodule",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-crushed",
+					"en": "Crushed Nodule",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-pebbles",
+					"en": "Nodule Pebbles",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-void",
+					"en": "Water Void",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "filled-barrel",
+					"en": "__1__ Barrel",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"technology-name": [
+				{
+					"var": "water-treatment",
+					"en": "Water Treatment",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "angels-fluid-barreling",
+					"en": "Fluid Barreling",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "water-washing",
+					"en": "Washing",
+					"ru": "",
+					"status": 1
+				},
+				{
+					"var": "nodule-processing",
+					"en": "Nodule Processing",
+					"ru": "",
+					"status": 1
+				}
+			],
+			"entity-description": [
+				{
+					"var": "clarifier",
+					"en": "Helps you to get rid of all the water you dont want (Water Void)",
+					"ru": "",
+					"status": 1
+				}
+			]
+		}
+	}
+]

@@ -138,4 +138,27 @@ pre
 	&:active
 		background-color: darken(hsl(20, 79%, 45%), 5%)
 
+.content-error
+	display: flex
+	margin: 200px auto!important
+	h1
+		color: $accent-color
+		font-weight: 800
+		position: relative
+		padding: 0 60px
+		&:after,&:before
+			content: '\f071'
+			font-family: FontAwesome
+			position: absolute
+		&:before
+			left: 0
+		&:after
+			right: 0
+
+.blink
+	animation: blink 1.5s linear infinite
+	@keyframes blink
+		50%
+			opacity: 0
+
 @import "media" // Всегда в конце
