@@ -27,7 +27,8 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-	background-color: #ccc 
+	background-color: $bg-color !important
+	background: url('../img/bg.png') repeat 0 0 !important
 
 body
 	font-size: 16px
@@ -45,7 +46,12 @@ body
 
 .header
 	padding: 20px 0 0
-	margin-bottom: 20px  
+	margin-bottom: 15px
+	color: $accent-color
+	&-logo
+		display: flex
+		img
+			margin: 15px auto 30px
 	&-select
 		text-align: center
 
@@ -56,39 +62,51 @@ body
 	width: 100%
 	display: flex
 	flex-flow: row wrap
-	padding: 10px 
+	padding: 15px 
 	.files
-		background-color: $files-bg
 		flex: 1 100%
-		border-radius: 2px
 		margin: 0 auto
-		padding: 50px
+		padding: 20px 50px
 		.file
 			width: 100%
 			pre
+				color: $main-color
 				cursor: pointer
-				margin: 0
-				strong
-					font-weight: 600
+				background-color: hsl(20, 79%, 45%)
+				text-shadow: -1px -1px 1px rgba(0,0,0,0.3)
+				border-color: #883810 #883810 hsl(20,79%,24.5%)
+				border-radius: 3px
+				box-sizing: border-box
+				margin-bottom: 0
+				&:before
+					font-family: FontAwesome
+					content: '\f016'
+					font-size: 18px
+					position: relative
+
+				&:active
+					background-color: darken(hsl(20, 79%, 45%), 5%)
 			.sections
 				width: 100%
 				.section
 					width: 100%
 					margin: 5px 0
 					border-radius: 2px
-					padding: 5px
+					padding: 0 15px
 					.table-wrap
 						table
-							background-color: $table-bg							
 							thead
-								color: $table-text-color
+								color: $main-color
 								tr
 									text-transform: uppercase
 									font-weight: 800
 							tbody
-								color: lighten($table-text-color, 12%)
-
-caption
-	display: inline-block
+								color: $main-color
+								tr
+									td
+										border-color: $accent-color !important
+										border-top-style: dotted !important
+										&:first-child
+											color: $accent-color
 
 @import "media" // Всегда в конце
