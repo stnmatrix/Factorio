@@ -25,8 +25,9 @@ body input:required:valid,
 body textarea:required:valid
 	color: $accent-color
 
-html, body
+html, body, .preloader-container
 	height: 100%
+	color: $accent-color
 	background-color: $bg-color !important
 	background: url('../img/bg.png') repeat 0 0 !important
 
@@ -39,10 +40,232 @@ body
 	overflow-x: hidden
 	opacity: 1
 
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alfa(opacity = $opacity)
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 100
+	background-color: $bg-color
+	.pulse
+		position: relative
+		left: 50%
+		top: 50vh
+		margin: 
+			left: -40px
+			top: -40px
+		&::before, &::after
+			content: ''
+			border: 5px solid $accent-color
+			width: 80px
+			height: 80px
+			border-radius: 500px
+			position: absolute
+		&::before
+			animation: pulse-outer .8s ease-in infinite
+		&::after
+			animation: pulse-inner .8s linear infinite
+	p
+		color: $accent-color
+		position: absolute
+		top: 60vh
+		width: 100%
+		padding-left: 17px
+		text-align: center
+		font-size: 26px
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.loader-container 
+	height: 100%
+	margin: 0
+	background: transparent
+	color: $accent-color
+	font-family: open sans
+	padding: 0
+
+.loader
+	&.full-width
+		width: 100%
+		height: 120px
+		margin-left: 0px
+		margin-right: 0px
+	background: transparent
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 50%
+	width: 45%
+	margin: 5%
+	border: 1px solid $accent-color
+	position: relative
+
+.loader-container
+	cursor: default
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	z-index: 2
+
+/* preloader pacman
+
+.loader-pacman
+	.dot
+		display: inline-block
+		background: $accent-color
+		height: 5px
+		width: 5px
+		margin-right: 20px
+		opacity: 0.7
+		border-radius: 50%
+		animation: fade-out 14s linear infinite
+	.pacman
+		display: inline-block
+		background: $accent-color
+		height: 20px
+		vertical-align: bottom
+		width: 20px
+		margin-right: 20px
+		opacity: 1
+		border-radius: 50%
+		position: relative
+		animation: move-forward 14s linear infinite
+		transform: translateX(-40px)
+	.dot
+		&:nth-child(1)
+			animation-delay: .4s
+		&:nth-child(2)
+			animation-delay: .8s
+		&:nth-child(3)
+			animation-delay: 1.2s
+		&:nth-child(4)
+			animation-delay: 1.6s
+		&:nth-child(5)
+			animation-delay: 2.0s
+		&:nth-child(6)
+			animation-delay: 2.4s
+		&:nth-child(7)
+			animation-delay: 2.8s
+		&:nth-child(8)
+			animation-delay: 3.2s
+		&:nth-child(9)
+			animation-delay: 3.6s
+		&:nth-child(10)
+			animation-delay: 4.0s
+		&:nth-child(11)
+			animation-delay: 4.4s
+		&:nth-child(12)
+			animation-delay: 4.8s
+		&:nth-child(13)
+			animation-delay: 5.2s
+		&:nth-child(14)
+			animation-delay: 5.6s
+		&:nth-child(15)
+			animation-delay: 5.9s
+		&:nth-child(16)
+			animation-delay: 6.2s
+		&:nth-child(17)
+			animation-delay: 6.6s
+	.pacman:before
+		content: ''
+		display: inline-block
+		background: transparent
+		vertical-align: bottom
+		border-top: 10px solid transparent
+		border-bottom: 10px solid transparent
+		right: 0px
+		border-right: 10px solid $bg-color
+		opacity: 1
+		position: absolute
+		animation: eat .4s infinite
+	.ghost
+		height: 25px
+		width: 25px
+		background: #ED1C24
+		top: -22px
+		border-top-left-radius: 50%
+		border-top-right-radius: 50%
+		position: relative
+		transform: translateX(550px)
+		animation: move-back 14s linear infinite
+		animation-delay: 7s
+		opacity: 0
+		&:before
+			height: 5px
+			content: ''
+			width: 3px
+			background: #fff
+			top: 7px
+			left: 7px
+			z-index: 10
+			position: absolute
+		&:after
+			height: 5px
+			content: ''
+			width: 3px
+			background: #fff
+			top: 7px
+			right: 7px
+			z-index: 10
+			position: absolute
+
+@keyframes eat
+	50%
+		transform: translateX(10px) scale(0.1)
+
+@keyframes move-back
+	3%
+		opacity: 1
+	35%
+		opacity: 1
+	49%
+		opacity: 0
+	50%
+		transform: translateX(0px)
+
+@keyframes move-forward
+	50%
+		transform: translateX(500px)
+	50.1%
+		transform: translateX(500px) scaleX(-1)
+		opacity: 1
+	100%
+		transform: translateX(-40px) scaleX(-1)
+
+@keyframes fade-out
+	0%
+		opacity: 0
+	40%
+		opacity: 0
+	89.99%
+		opacity: 0
+	90%
+		opacity: 0.5
 
 .header
 	padding: 40px 0 150px
@@ -56,6 +279,22 @@ body
 	&-select
 		position: relative
 		display: inline-block
+		select
+			position: absolute
+			right: 15px
+			background-color: transparent
+			color: $accent-color
+			border: 1px solid $accent-color
+			border-radius: 3px
+			font-size: 16px
+			text-align: left
+			height: 38px
+			outline: none
+			padding:
+				left: 25px
+				right: 25px
+			option
+				background-color: transparent
 
 		.selectize-control.single
 			.selectize-input
@@ -113,6 +352,14 @@ body
 	width: 100%
 	display: flex
 	flex-flow: row wrap
+	position: relative
+	h1
+		font-size: 50px
+		text-align: center
+		margin-bottom: 25px
+	p
+		font-size: 18px
+		text-align: center
 	.files
 		flex: 1 100%
 		margin: 0 auto

@@ -16,7 +16,8 @@ $(function() {
 		select.on('change', () => {
 			let dirIndex = $(this).find(':selected').val();
 
-			mainContent.html('');
+			$('.loader-container').addClass('hidden');
+			$('.main-content .container > *').addClass('hidden');
 
 			const requestContent = $.getJSON(`${dirIndex}.json`, response => {
 				response.map(files => {
@@ -91,7 +92,7 @@ $(function() {
 			};
 		});
 	})
-		//.done(() =>  select.selectize({}))
+		.done(() => select.selectize({}))
 		.fail(() => { error("error at request sections list") });
 		
 	const error = msg => {
@@ -121,3 +122,9 @@ $(function() {
 			.animate({scrollTop: 0}, 'slow', 'swing');
 	});
 });
+
+$(window).on('load', () => {
+	$('.preloader').delay(2000).fadeOut('slow');
+	$('.loader-container').delay(5000).removeClass('hidden');
+});
+
