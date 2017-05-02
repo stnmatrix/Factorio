@@ -45,13 +45,14 @@ body
 	height: auto
 
 .header
-	margin: 20px auto
+	padding: 40px 0 150px
 	color: $accent-color
 	position: relative
 	&-logo
 		position: relative
 		img
 			left: 0
+			cursor: pointer
 	&-select
 		position: relative
 		display: inline-block
@@ -112,7 +113,6 @@ body
 	width: 100%
 	display: flex
 	flex-flow: row wrap
-	padding: 15px 0 
 	.files
 		flex: 1 100%
 		margin: 0 auto
@@ -204,6 +204,26 @@ pre
 			left: 0
 		&:after
 			right: 0
+
+.top
+	position: fixed
+	bottom: 40px
+	right: -100px
+	z-index: 12
+	color: $accent-color
+	border: 2px solid $accent-color
+	border-radius: 3px
+	font-size: 26px
+	width: 50px
+	height: 50px
+	text-align: center
+	cursor: pointer
+	transition: all .3s ease
+	opacity: .3
+	&:hover
+		opacity: .9
+	&.active
+		right: 40px
 
 .blink
 	animation: blink 1.5s linear infinite

@@ -1,5 +1,5 @@
 $(function() {
-	const mainContent = $(".main-content"),
+	const mainContent = $(".main-content .container"),
 				select = $('#dir');
 	let count = 0;
 
@@ -91,7 +91,7 @@ $(function() {
 			};
 		});
 	})
-		.done(() =>  select.selectize({}))
+		//.done(() =>  select.selectize({}))
 		.fail(() => { error("error at request sections list") });
 		
 	const error = msg => {
@@ -106,4 +106,18 @@ $(function() {
 			.html('')
 			.append(div);
 	};
+
+	$(window).scroll(() => {
+		if ($(this).scrollTop() > 1200) {
+			$('.top').addClass('active');
+		} else {
+			$('.top').removeClass('active');
+		}
+	});
+
+	$('.top').on('click', () => {
+		$('htmlm, body')
+			.stop()
+			.animate({scrollTop: 0}, 'slow', 'swing');
+	});
 });
