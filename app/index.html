@@ -38,16 +38,18 @@
 </head>
 
 <body>
-
-	<div class="header">
-		<div class="header-logo">
-			<img src="./img/factorio-logo.png" alt="Factorio" class="img-responsive">
-		</div>
-		<div class="header-select">
-			Select dir :
-			<select id="dir">
-				<option></option>
-			</select>
+	<div class="container">
+		<div class="row">
+			<div class="header">
+				<div class="header-logo col-md-8">
+					<img src="./img/factorio-logo.png" alt="Factorio" class="img-responsive">
+				</div>
+				<div class="header-select col-md-4">
+					<select id="dir" hidden>
+						<option value disabled selected>Directory</option>
+					</select>
+				</div>
+			</div>
 		</div>
 	</div>
 

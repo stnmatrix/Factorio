@@ -3,27 +3,27 @@
 @import "vars"
 
 *::-webkit-input-placeholder
-	color: #666
+	color: rgba($accent-color, .7)
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: rgba($accent-color, .7)
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: rgba($accent-color, .7)
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: rgba($accent-color, .7)
 	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+	color: $accent-color
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: $accent-color
 
 html, body
 	height: 100%
@@ -45,15 +45,65 @@ body
 	height: auto
 
 .header
-	padding: 20px 0 0
-	margin-bottom: 25px
+	margin: 20px auto
 	color: $accent-color
+	position: relative
 	&-logo
-		display: flex
+		position: relative
 		img
-			margin: 15px auto 30px
+			left: 0
 	&-select
-		text-align: center
+		position: relative
+		display: inline-block
+
+		.selectize-control.single
+			.selectize-input
+				height: 38px
+				padding:
+					left: 25px
+					right: 25px
+				&::before
+					background-color: $accent-color
+
+		.selectize-control.single
+			.selectize-input, &.dropdown-active
+				&::after
+					border: none
+					content: '\f0dd'
+					font-family: FontAwesome
+					position: absolute
+					right: 35px
+					top: 9px
+				&.dropdown-active::after
+					content: '\f0de'
+					top: 16px
+
+		.selectize-dropdown.single
+			background-color: $bg-color
+			color: $accent-color
+			border-color: $accent-color
+			.option
+				font-size: 14px
+				padding: 5px 20px
+				&:hover,&.active
+					color: $main-color
+					background-color: rgba($accent-color, .9)
+
+		.selectize-control.single .selectize-input input,
+		.selectize-control.single .selectize-input .item
+			padding:
+				top: 2px
+				bottom: 5px
+			height: 100%
+
+		.selectize-control.single .selectize-input,
+		.selectize-control.single .selectize-input input
+			background-color: transparent
+			color: $accent-color
+			border: 1px solid $accent-color
+			border-radius: 3px
+			font-size: 16px
+			text-align: left
 
 .hidden_template
 	display: none

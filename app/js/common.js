@@ -6,15 +6,11 @@ $(function() {
 	const getSectionsList = $.getJSON("getlist.json", response => {
 		let options = [];
 
-		select.html('');
-
 		$.each(response, (i, element) => {
 
 			options.push($(`<option value=${element}>${element}</option>`))
 			select
-				.append(options)
-				.find('option:eq(0)')
-				.prop('selected', true);
+				.append(options);
 		});
 
 		select.on('change', () => {
@@ -94,8 +90,10 @@ $(function() {
 				});
 			};
 		});
-	}).fail(() => { error("error at request sections list") });
-
+	})
+		.done(() =>  select.selectize({}))
+		.fail(() => { error("error at request sections list") });
+		
 	const error = msg => {
 		let div = $('<div class="content-error"></div>'),
 				errorText = $(`<h1>${msg}</h1>`);
