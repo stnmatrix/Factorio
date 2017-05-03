@@ -420,11 +420,7 @@ body
 											span
 												cursor: pointer
 .td-edit
-	border:
-		bottom: 1px dotted rgba($accent-color, .2)
-		left: 1px dotted rgba($accent-color, .2)
-		right: none
-		top: none
+	border: none
 	background-color: $bg-color
 	color: rgba($accent-color, .8)
 	width: 100%
@@ -433,10 +429,7 @@ body
 	font-size: inherit
 	position: relative
 	line-height: inherit
-	padding:
-		bottom: 5px
-		left: 15px
-		right: 15px
+	text-align: center
 	&::before
 		content: '\f00d'
 		font-family: FonAwesome
@@ -446,19 +439,19 @@ body
 	&:hover
 
 	&::-webkit-input-placeholder
-		color: $main-color
+		color: $accent-color
 		opacity: .4
 
 	&:-moz-placeholder
-		color: $main-color
+		color: $accent-color
 		opacity: .4
 
 	&::-moz-placeholder
-		color: $main-color
+		color: $accent-color
 		opacity: .4
 
 	&:-ms-input-placeholder
-		color: $main-color
+		color: $accent-color
 		opacity: .4
 
 pre

@@ -49,14 +49,23 @@ $(function() {
 							.append($('<i class="fa fa-sort-down"></i>'))
 
 						obj.map((val) => {
-							let tr = $('<tr></tr>');
+							let tr = $('<tr></tr>'),
+									placeholder = '';
+
+							if (val.ru === '') {
+								placeholder = 'Введите перевод';
+							} else {
+								placeholder = val.ru;
+							}
+
 							tr.append(`<td><span>${val.var}</span></td>`);
 							tr.append(`<td><span>${val.en}</span></td>`);
-							tr.append(`<td><span>${(val.ru === '') ? "Не указано": val.ru}</span><input type="text" class="td-edit hidden invisible" placeholder=${(val.ru || '') ? val.ru : 'Перевод 123'}></input></td>`);
+							tr.append(`<td><span>${(val.ru === '') ? "Не указано": val.ru}</span><input type="text" class="td-edit hidden invisible"></input></td>`);
+							tr.find('td').eq(2).find('.td-edit').attr('placeholder', placeholder)
 							tr.appendTo(sectionClone.find('tbody'));
 						});
 
-						sectionClone.appendTo(filesDiv.find('.sections'));						
+						sectionClone.appendTo(filesDiv.find('.sections'));
 					});
 				});
 			};			
@@ -97,11 +106,11 @@ $(function() {
 	mainContent.on("click", "tbody td span", event => {
 		$(event.target)
 			.toggleClass("invisible")
-			.fadeOut()
+			.fadeToggle()
 			.toggleClass("hidden");
 
 		$(event.target).parent().find("input.td-edit")
-			.fadeIn()
+			.fadeToggle()
 			.toggleClass("hidden invisible active")
 			.focus();
 	});
@@ -110,16 +119,16 @@ $(function() {
 		switch (event.which) {
 			case 13: //
 				$(event.target).parent('td').find("span")
-					.fadeIn()
+					.fadeToggle()
 					.toggleClass("hidden invisible");
 
 				$(event.target)
 					.toggleClass("invisible")
-					.fadeOut()
+					.fadeToggle()
 					.toggleClass("hidden active");
 
-				if (!($(event.target).val()) && !(($(event.target).val()) === "")) {
-					$(event.target).parent().find("span").text($(event.target).val());
+				if (!(($(event.target).val()) === "")) {
+					$(event.target).parent('td').find("span").text($(event.target).val());
 				}
 
 				$(event.target).val("");
@@ -128,12 +137,12 @@ $(function() {
 			case 27: // esc
 				$(event.target)
 					.parent().find("span")
-					.fadeIn()
+					.fadeToggle()
 					.toggleClass("hidden invisible");
 
 				$(event.target)
 					.toggleClass("invisible")
-					.fadeOut()
+					.fadeToggle()
 					.toggleClass("hidden active");
 				$(event.target).val("");
 
