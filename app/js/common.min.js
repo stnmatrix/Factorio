@@ -70,9 +70,9 @@ $(function() {
 
 						obj.map((val) => {
 							let tr = $('<tr></tr>');
-							tr.append(`<td>${val.var}</td>`);
-							tr.append(`<td>${val.en}</td>`);
-							tr.append(`<td>${val.ru}</td>`);
+							tr.append(`<td><span>${val.var}</span></td>`);
+							tr.append(`<td><span>${val.en}</span></td>`);
+							tr.append(`<td><span>${val.ru}</span><input type="text" class="td-edit hidden" placeholder=${(val.ru || '') ? val.ru : "Enter value"}></input></td>`);
 							tr.appendTo(section.find('tbody'));
 						});
 
@@ -87,6 +87,12 @@ $(function() {
 
 							$(event.target).find('.fa').toggleClass('fa-sort-up');
 						});
+
+						section.find('tbody td').eq(2).click(event => {
+							$(event.target).addClass('hidden');
+							$(event.target).parent().find('input.td-edit').removeClass('hidden').focus();
+						});
+
 					});
 				});
 			};
