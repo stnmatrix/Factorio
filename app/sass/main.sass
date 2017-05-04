@@ -420,16 +420,20 @@ body
 											span
 												cursor: pointer
 .td-edit
-	border: none
-	background-color: $bg-color
-	color: rgba($accent-color, .8)
 	width: 100%
 	height: 100%
-	outline: none
-	font-size: inherit
-	position: relative
-	line-height: inherit
-	text-align: center
+	display: none
+	&-input
+		border: none
+		background-color: $bg-color
+		color: rgba($accent-color, .8)
+		width: 100%
+		height: 100%
+		outline: none
+		font-size: inherit
+		position: relative
+		line-height: inherit
+		text-align: center
 	&::before
 		content: '\f00d'
 		font-family: FonAwesome
