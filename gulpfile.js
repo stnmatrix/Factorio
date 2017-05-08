@@ -19,7 +19,7 @@ var gulp = require("gulp"),
 gulp.task("common-js", function() {
   return (gulp
       .src(["app/js/common.js"])
-			//.pipe(babel({presets: ['babili']}))
+			.pipe(babel({presets: ['babili']}))
       .pipe(concat("common.min.js"))
       //.pipe(uglify())
       .pipe(gulp.dest("app/js")) );

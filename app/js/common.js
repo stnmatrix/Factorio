@@ -5,16 +5,15 @@ $(function() {
 		sectionTemplate = $(
 			`<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
 		);
-	let count = 0,
-			store = {};
+	let count = 0;
 
 	/*		Get Sections List		*/
 
-	const getSectionsList = $.getJSON("getlist.json", response => {
+	const getSectionsList = $.getJSON("../getlist.json", response => {  // EDIT URL
 		let options = [];
 
 		$.each(response, (i, element) => {
-			options.push($(`<option value=${element}>${element}</option>`));
+			options.push($(`<option value=${i}>${element}</option>`));
 			select.append(options);
 		});
 
@@ -24,14 +23,14 @@ $(function() {
 			$(".loader-container").addClass("hidden");
 			$(".main-content .container > *").addClass("hidden");
 
-			const requestContent = $.getJSON(`${dirIndex}.json`, response => {
-				response.map(files => {
-					renderContent(files);
+			const requestContent = $.getJSON(`../${dirIndex}.json`, response => {  //EDIT URL
+				console.log(response)
+				$.each(response, filename => {
+					renderContent(filename, response[filename]);
 				});
 			}).fail(error => {
 				console.log("error at request content");
 			});
-
 		});
 	})
 		.done(() => {
@@ -41,12 +40,13 @@ $(function() {
 			error("error at request sections list");
 		});
 
-	const renderContent = files => {
-		$.each(files, (filename, obj) => {
+	const renderContent = (filename, object) => {
+		console.log(filename, object)
+		// $.each(file, (filename, obj) => {
 			let filesDiv = $(".hidden_template").clone();
 
 			filesDiv
-				.attr("id", `${count++}`)
+				//.attr("id", `${count++}`)
 				.removeClass("hidden_template")
 				.css("display", "flex")
 				.appendTo(mainContent);
@@ -56,16 +56,19 @@ $(function() {
 				.text(filename)
 				.append($('<i class="fa fa-sort-down"></i>'));
 
-			$.each(files[filename], (groupname, obj) => {
-				let sectionClone = sectionTemplate.clone();
-
+			$.each(object, (groupname, obj) => {
+				let sectionClone = sectionTemplate.clone(),
+						tbody = sectionClone.find("tbody");
+				
+				
 				sectionClone
 					.find("pre")
 					.append(groupname)
 					.append($('<i class="fa fa-sort-down"></i>'));
-
-				obj.map(val => {
-					let tr = $("<tr></tr>"), placeholder = "";
+				
+				$.each(obj,(i, val) => {
+					let tr = $("<tr></tr>"),
+							placeholder = "";
 
 					if (val.ru === "") {
 						placeholder = "Введите перевод";
@@ -78,17 +81,20 @@ $(function() {
 					tr.append(
 						`<td><span class='ru-translate'>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible"></input></td>`
 					);
+
+
 					tr
-						.find("td")
+						.children("td")
 						.eq(2)
-						.find(".td-edit")
+						.children(".td-edit")
 						.attr("placeholder", placeholder);
-					tr.appendTo(sectionClone.find("tbody"));
+					tr.appendTo(tbody);
+					
 				});
 
 				sectionClone.appendTo(filesDiv.find(".sections"));
 			});
-		});
+		//});
 	};
 
 	/*		Additional functions		*/
@@ -102,20 +108,27 @@ $(function() {
 		mainContent.html("").append(div);
 	};
 
-	const sendValueToServer = (storeObj, input, value) => {
-		let obj = storeObj,
+	const sendValueToServer = (input, value) => {
+		let url = 'http://localohost:3000/index.html',  // EDIT URL
+				store = {},
+				dir = $('.selectize-dropdown-content > .option.selected.active').attr("data-value"),
 				file = input.closest('.file').children('pre'),
 				section = input.closest('.section').children('pre'),
 				variable = input.closest('tr').children('td').eq(0).children('span');
+		store.dir = dir;
+		store.filename = file.text();
+		store.sectionname = section.text();
+		store.variablename = variable.text();
+		store.ru = value;
 
-		store = {};
+		console.log(store);	
 
-		obj.filename = file.text();
-		obj.sectionname = section.text();
-		obj.variablename = variable.text();
-		obj.ru = value;
+		$.post(url, store)
+			.done(() => {
+				console.log('Данные отправлены');
+				console.log(store);
+			});
 
-		store = obj;
 	};
 
 	/*		Show/Hide function		*/
@@ -144,12 +157,14 @@ $(function() {
 	/*		Events		*/
 
 	mainContent.on("click", ".file pre", event => {
-		$(event.target).closest(".file").children(".sections").slideToggle(400);
+		event.stopPropagation();
+		$(event.target).siblings(".sections").slideToggle(400);
 		$(event.target).find(".fa").toggleClass("fa-sort-up");
 	});
 
 	mainContent.on("click", ".section pre", event => {
-		$(event.target).closest(".section").children(".table-wrap").slideToggle(400);
+		event.stopPropagation();
+		$(event.target).siblings(".table-wrap").slideToggle(400);
 		$(event.target).find(".fa").toggleClass("fa-sort-up");
 	});
 
@@ -168,7 +183,7 @@ $(function() {
 			if (!(activeInput.val() === "")) {
 				activeInputParent.text(activeInput.val());
 
-				sendValueToServer(store, activeInput, activeInput.val());//
+				sendValueToServer(activeInput, activeInput.val());//
 
 			}
 			activeInput.val("");
@@ -191,7 +206,7 @@ $(function() {
 				if (!($(event.target).val() === "")) {
 					span.text(value);
 
-					sendValueToServer(store, $(event.target), $(event.target).val());//
+					sendValueToServer($(event.target), $(event.target).val());//
 
 				}
 				$(event.target).val("");
@@ -217,7 +232,7 @@ $(function() {
 			// }
 			if (!(input.val() === "")) {
 				span.text(input.val());
-				//sendValueToServer(store, input, input.val());//
+				//sendValueToServer(input, input.val());//
 			}
 			input.val("");
 		}
