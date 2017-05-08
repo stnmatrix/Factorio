@@ -23,24 +23,37 @@ $(function() {
 			$(".loader-container").addClass("hidden");
 			$(".main-content .container > *").addClass("hidden");
 
-			const requestContent = $.getJSON(`${url}?getlist=${dirIndex}`, response => {
-				console.log(response)
+			const requestContent = $.getJSON(`${url}?getdir=${dirIndex}`, response => {
+				let emptyTable = [];
+
 				$.each(response, filename => {
-					renderContent(filename, response[filename]);
+					if (!response || response === '') 
+						error('Error at request content');
+					else
+						renderContent(filename, response[filename]);
+						 emptyTable = $('tbody:empty');
 				});
+
+				$.each(emptyTable, (i,tbody) => {
+					$(tbody).closest(".table-wrap").slideToggle('fast');
+					$(tbody).closest('.section').find('.fa').toggleClass("fa-sort-up");
+				});
+
 			}).fail(error => {
-				console.log("error at request content");
+				error('Error at request content');
 			});
 		});
-	})
-		.done(() => {
+	}).done(() => {
 			select.selectize({});
 		})
 		.fail(() => {
 			error("error at request sections list");
 		});
 
-	const renderContent = (filename, object) => {	
+	const renderContent = (filename, object) => {
+
+			/* File render */
+
 			let filesDiv = $(".hidden_template").clone();
 
 			filesDiv
@@ -53,15 +66,19 @@ $(function() {
 				.text(filename)
 				.append($('<i class="fa fa-sort-down"></i>'));
 
+				/* Section render */
+
 			$.each(object, (groupname, obj) => {
 				let sectionClone = sectionTemplate.clone(),
-						tbody = sectionClone.find("tbody");				
+						tbody = sectionClone.find("tbody");
 
 				sectionClone
 					.find("pre")
 					.append(groupname)
 					.append($('<i class="fa fa-sort-down"></i>'));
-				
+
+					/* Tr render */
+
 				$.each(obj,(i, val) => {
 					let tr = $("<tr></tr>"),
 							placeholder = "";
@@ -75,22 +92,24 @@ $(function() {
 					tr.append(`<td><span>${val.var}</span></td>`);
 					tr.append(`<td><span>${val.en}</span></td>`);
 					tr.append(
-						`<td><span class='ru-translate'>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible"></input></td>`
+						`<td><span class='ru-translate'>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible" value="${(!val.ru && val.ru === "") ? "" : val.ru }"></input></td>`
 					);
-
 
 					tr
 						.children("td")
 						.eq(2)
 						.children(".td-edit")
 						.attr("placeholder", placeholder);
-					tr.appendTo(tbody);
+					tr.appendTo(tbody);					
 					
 				});
-
 				sectionClone.appendTo(filesDiv.find(".sections"));
 			});
-	};
+	};	
+	// if ($('tbody td:empty')) {
+	// 	tr.has(".table-wrap").slideUp('fast');
+	// 	tr.has('.section').children('pre').children('.fa').toggleClass("fa-sort-up")
+	// }
 
 	/*		Additional functions		*/
 
@@ -104,8 +123,7 @@ $(function() {
 	};
 
 	const sendValueToServer = (input, value) => {
-		let url = 'http://localohost:3000/index.html',  // EDIT URL
-				store = {},
+		let store = {},
 				dir = $('.selectize-dropdown-content > .option.selected.active').attr("data-value"),
 				file = input.closest('.file').children('pre'),
 				section = input.closest('.section').children('pre'),
@@ -116,12 +134,9 @@ $(function() {
 		store.variablename = variable.text();
 		store.ru = value;
 
-		console.log(store);	
-
 		$.post(url, store)
 			.done(() => {
 				console.log('Данные отправлены');
-				console.log(store);
 			});
 
 	};
@@ -178,10 +193,10 @@ $(function() {
 			if (!(activeInput.val() === "")) {
 				activeInputParent.text(activeInput.val());
 
-				sendValueToServer(activeInput, activeInput.val());//
+				sendValueToServer(activeInput, activeInput.val());
 
 			}
-			activeInput.val("");
+			//activeInput.val("");
 		}
 		hideElement(input,"hidden invisible active");
 		showElement(span, "invisible hidden");
@@ -204,7 +219,7 @@ $(function() {
 					sendValueToServer($(event.target), $(event.target).val());//
 
 				}
-				$(event.target).val("");
+				//$(event.target).val("");
 				break;
 			case 27: // Esc
 				showElement(span, "invisible hidden");
@@ -222,14 +237,12 @@ $(function() {
 		if (!(mainContent.has(event.target).length)) {
 			showElement(span, "invisible hidden");
 			hideElement(input,"hidden invisible active");
-			// if ($) {
-				
-			// }
-			if (!(input.val() === "")) {
+
+			if (!(input.val() === "") && $('')) {
 				span.text(input.val());
 				//sendValueToServer(input, input.val());//
 			}
-			input.val("");
+			//input.val("");
 		}
 	});
 
