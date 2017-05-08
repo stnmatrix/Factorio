@@ -4,12 +4,12 @@ $(function() {
 		section = mainContent.find(".sections .section"),
 		sectionTemplate = $(
 			`<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
-		);
-	let count = 0;
+		),
+		url = 'http://localhost/result.php';
 
 	/*		Get Sections List		*/
 
-	const getSectionsList = $.getJSON("../getlist.json", response => {  // EDIT URL
+	const getSectionsList = $.getJSON(`${url}?getlist`, response => {
 		let options = [];
 
 		$.each(response, (i, element) => {
@@ -23,7 +23,7 @@ $(function() {
 			$(".loader-container").addClass("hidden");
 			$(".main-content .container > *").addClass("hidden");
 
-			const requestContent = $.getJSON(`../${dirIndex}.json`, response => {  //EDIT URL
+			const requestContent = $.getJSON(`${url}?getlist=${dirIndex}`, response => {
 				console.log(response)
 				$.each(response, filename => {
 					renderContent(filename, response[filename]);
@@ -40,13 +40,10 @@ $(function() {
 			error("error at request sections list");
 		});
 
-	const renderContent = (filename, object) => {
-		console.log(filename, object)
-		// $.each(file, (filename, obj) => {
+	const renderContent = (filename, object) => {	
 			let filesDiv = $(".hidden_template").clone();
 
 			filesDiv
-				//.attr("id", `${count++}`)
 				.removeClass("hidden_template")
 				.css("display", "flex")
 				.appendTo(mainContent);
@@ -58,9 +55,8 @@ $(function() {
 
 			$.each(object, (groupname, obj) => {
 				let sectionClone = sectionTemplate.clone(),
-						tbody = sectionClone.find("tbody");
-				
-				
+						tbody = sectionClone.find("tbody");				
+
 				sectionClone
 					.find("pre")
 					.append(groupname)
@@ -94,7 +90,6 @@ $(function() {
 
 				sectionClone.appendTo(filesDiv.find(".sections"));
 			});
-		//});
 	};
 
 	/*		Additional functions		*/
@@ -254,6 +249,6 @@ $(function() {
 });
 
 $(window).on("load", () => {
-	$(".preloader").delay(100).fadeOut("slow");
+	$(".preloader").delay(2000).fadeOut("slow");
 	$(".loader-container").delay(5000).removeClass("hidden");
 });
