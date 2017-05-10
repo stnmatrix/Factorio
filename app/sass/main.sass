@@ -419,8 +419,18 @@ body
 										&:first-child
 											color: $accent-color
 										&:nth-child(3)
+											position: relative
 											span
 												cursor: pointer
+												position: relative
+											.fa
+												position: absolute
+												right: 0
+												color: $bg-error-color
+												padding: 3px 5px
+												font-size: 16px
+												cursor: pointer
+
 .td-edit	
 	border: none
 	background-color: $bg-color
@@ -506,5 +516,35 @@ pre
 	@keyframes blink
 		50%
 			opacity: 0
+
+.send-error
+	color: $bg-error-color
+
+.send-success
+	color: $bg-success-color
+
+.new
+	&::after
+		content: 'new'
+		color: $bg-success-color
+		position: absolute
+		top: -5px
+		right: -27px
+		font-size: 12px
+		line-height: 12px
+
+.old
+	cursor: not-allowed !important
+	&::after
+		content: 'old'
+		color: $bg-error-color
+		position: absolute
+		top: -5px
+		right: -22px
+		font-size: 12px
+		line-height: 12px
+
+
+
 
 @import "media" // Всегда в конце
