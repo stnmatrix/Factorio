@@ -5,7 +5,7 @@ $(function() {
     sectionTemplate = $(
       `<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
     ),
-    url = "http://localhost/result.php";
+    url = "./result.php";
 
   /*		Get Sections List		*/
 
@@ -36,7 +36,11 @@ $(function() {
 
           $.each(emptyTable, (i, tbody) => {
             $(tbody).closest(".table-wrap").slideToggle("fast");
-            $(tbody).closest(".section").find(".fa").toggleClass("fa-sort-up");
+            $(tbody)
+              .closest(".section")
+              .find(".fa")
+              .toggleClass("fa-sort-down")
+              .toggleClass("fa-sort-up");
           });
         }
       ).fail(error => {
@@ -48,7 +52,7 @@ $(function() {
       select.selectize({});
     })
     .fail(() => {
-      error("error at request sections list");
+      error("Connection failed");
     });
 
   const renderContent = (filename, object) => {
@@ -64,7 +68,7 @@ $(function() {
     filesDiv
       .find(".file > pre")
       .text(filename)
-      .append($('<i class="fa fa-sort-down"></i>'));
+      .append('<i class="fa fa-sort-down"></i>');
 
     /* Section render */
 
@@ -75,7 +79,7 @@ $(function() {
       sectionClone
         .find("pre")
         .append(groupname)
-        .append($('<i class="fa fa-sort-down"></i>'));
+        .append('<i class="fa fa-sort-down"></i>');
 
       /* Tr render */
 
@@ -88,23 +92,22 @@ $(function() {
           placeholder = val.ru;
         }
 
-
         tr.append(`<td><span>${val.var}</span></td>`);
         tr.append(`<td><span>${val.en}</span></td>`);
         tr.append(
-          `<td><span class='ru-translate' title=${val.status === 0 ? 'Non-edit' : "Edit"}>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible" data-status=${val.status} value="${!val.ru && val.ru === "" ? "" : val.ru.replace(/\"/g, "&quot;")}"/></td>`
+          `<td><span class='ru-translate' title=${val.status === 0 ? "Non-edit" : "Edit"}>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible" data-status=${val.status} value="${!val.ru && val.ru === "" ? "" : val.ru.replace(/\"/g, "&quot;")}"/></td>`
         );
 
         let ru = tr.children("td").eq(2);
 
-        switch (val.status) {
+        switch (val.status) { // TR data status 0: default, 1: new, 2: non-edit
           case 1:
-            ru.children('span.ru-translate').addClass('new');
+            ru.children("span.ru-translate").addClass("new");
             break;
           case 2:
             ru.append(`<i class="fa fa-trash-o" title="Delete"></i>`);
-            
-            ru.children('span.ru-translate').addClass('old');
+
+            ru.children("span.ru-translate").addClass("old");
             break;
         }
         ru.children(".td-edit").attr("placeholder", placeholder);
@@ -125,8 +128,8 @@ $(function() {
 
     mainContent.html("").append(div);
   };
-
-  const sendValueToServer = (input, value) => {
+  /*	Send to Server	*/
+  const sendValueToServer = (input, value, method) => {
     let store = {},
       dir = $(".selectize-dropdown-content > .option.selected.active").attr(
         "data-value"
@@ -138,33 +141,48 @@ $(function() {
     store.filename = file.text();
     store.sectionname = section.text();
     store.variablename = variable.text();
-    store.ru = value;
 
-    $.post(url, store, (data, textStatus, jqXHR) => {
-      if (jqXHR.status === 200) {
-        input
-          .closest("tr")
-          .children("td:eq(2)")
-          .has("span")
-          .addClass("blink send-success")
-          .delay(1400)
-          .queue(function() {
-            $(this).removeClass("blink send-success").dequeue();
-          });
-      } else {
+    if (method === "edit") {
+      store.ru = value || "";
+      $.post(url, store, (data, textStatus, jqXHR) => {
+        if (jqXHR.status === 200) {
+          input
+            .closest("tr")
+            .children("td:eq(2)")
+            .has("span")
+            .addClass("blink send-success")
+            .delay(1400)
+            .queue(function() {
+              $(this).removeClass("blink send-success").dequeue();
+            });
+        } else {
+          input
+            .closest("tr")
+            .children("td:eq(2)")
+            .has("span")
+            .addClass("blink send-error");
+        }
+      }).fail(error => {
         input
           .closest("tr")
           .children("td:eq(2)")
           .has("span")
           .addClass("blink send-error");
-      }
-    }).fail(error => {
-      input
-        .closest("tr")
-        .children("td:eq(2)")
-        .has("span")
-        .addClass("blink send-error");
-    });
+      });
+    } else if (method === "delete") {
+      store.del = "delete";
+      $.post(url, store, (data, textStatus, jqXHR) => {
+        if (jqXHR.status === 200) {
+          input.closest("tr").hide(200).delay(200).queue(function() {
+            $(this).detach().dequeue();
+          });
+        } else {
+          input.closest("tr").addClass("blink send-error");
+        }
+      }).fail(error => {
+        input.closest("tr").addClass("blink send-error");
+      });
+    }
   };
 
   /*		Show/Hide function		*/
@@ -190,13 +208,19 @@ $(function() {
   mainContent.on("click", ".file pre", event => {
     event.stopPropagation();
     $(event.target).siblings(".sections").slideToggle(400);
-    $(event.target).find(".fa").toggleClass("fa-sort-up");
+    $(event.target)
+      .children(".fa")
+      .toggleClass("fa-sort-down")
+      .toggleClass("fa-sort-up");
   });
 
   mainContent.on("click", ".section pre", event => {
     event.stopPropagation();
     $(event.target).siblings(".table-wrap").slideToggle(400);
-    $(event.target).find(".fa").toggleClass("fa-sort-up");
+    $(event.target)
+      .has(".fa")
+      .toggleClass("fa-sort-up")
+      .toggleClass("fa-sort-down");
   });
 
   mainContent.on("click", "tbody tr .ru-translate", event => {
@@ -224,7 +248,7 @@ $(function() {
         activeInput.val() !== activeInputSibling.text()
       ) {
         activeInputSibling.text(activeInput.val());
-        sendValueToServer(activeInput, activeInput.val());
+        sendValueToServer(activeInput, activeInput.val(), "edit");
       }
     }
     hideElement(input, "hidden invisible active");
@@ -244,7 +268,7 @@ $(function() {
 
         if (value !== "" && value !== span.text()) {
           span.text(value);
-          sendValueToServer($(event.target), value); ////////
+          sendValueToServer($(event.target), value, "edit"); ////////
         }
         break;
       case 27: // Esc
@@ -262,12 +286,25 @@ $(function() {
     if (!mainContent.has(event.target).length) {
       showElement(span, "invisible hidden");
       hideElement(input, "hidden invisible active");
+      input.val(span.text());
+    }
+  });
 
-      // if (input.val() !== "" && input.val() !== span.text()) {
-      //   span.text(input.val());
-      //   sendValueToServer(input, input.val());
-      // }
-      input.val(span.text()); //временно
+  mainContent.on("click", ".section .fa-trash-o", event => {
+    event.stopPropagation();
+    sendValueToServer($(event.target), null, "delete");
+
+    let fileDiv = $(event.target).closest(".file"),
+      section = $(event.target).closest(".section"),
+      tbody = $(event.target).closest("tbody");
+
+    if (tbody.find("tr").length <= 1) {
+      tbody.closest(".table-wrap").slideToggle(400);
+      section
+        .children("pre")
+        .children(".fa")
+        .toggleClass("fa-sort-down")
+        .toggleClass("fa-sort-up");
     }
   });
 
