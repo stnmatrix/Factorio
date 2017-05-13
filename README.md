@@ -1,2 +1,3 @@
 # Factorio
-Factorio mods translate EN => RU
+Factorio mods translate (EN => RU)
+
