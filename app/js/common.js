@@ -5,7 +5,7 @@ $(function() {
     sectionTemplate = $(
       `<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
     ),
-    url = "./result.php";
+    url = "http://localhost/result.php";
 
   /*		Get Sections List		*/
 
@@ -55,7 +55,7 @@ $(function() {
       error("Connection failed");
     });
 
-  const renderContent = (filename, object) => {
+  function renderContent(filename, object) {
     /* File render */
 
     let filesDiv = $(".hidden_template").clone();
@@ -116,20 +116,53 @@ $(function() {
       });
       sectionClone.appendTo(filesDiv.find(".sections"));
     });
-  };
+  }
 
   /*		Additional functions		*/
 
-  const error = msg => {
+  function error(msg) {
     let div = $('<div class="content-error"></div>'),
       errorText = $(`<h1>${msg}</h1>`);
 
     div.append(errorText).addClass("blink");
 
     mainContent.html("").append(div);
-  };
+  }
+
+  /*	Find && Replace	*/
+
+  function replace(ruValue, trElement) {
+    if (!ruValue) {
+      console.error("Value is not defined");
+      return false;
+    }
+
+    let enValue = trElement.children("td").eq(1).text(), input;
+
+    $.each($(".sections tbody").find("tr"), (i, tr) => {
+      let enTD = $(tr).children("td").eq(1), en = enTD.text();
+
+      if (enValue === en) {
+        if (
+          $(tr).children("td").eq(2).text() !==
+          trElement.children("td").eq(2).text()
+        ) {
+          // другие элементы
+          let span = $(tr).find(".ru-translate");
+          span.text(ruValue);
+          input = span.siblings(".td-edit");
+        } else {
+          // этот же элемент
+          input = $(tr).find(".td-edit");
+        }
+      }
+    });
+    return input;
+  }
+
   /*	Send to Server	*/
-  const sendValueToServer = (input, value, method) => {
+
+  function sendValueToServer(input, value, method) {
     let store = {},
       dir = $(".selectize-dropdown-content > .option.selected.active").attr(
         "data-value"
@@ -183,29 +216,30 @@ $(function() {
         input.closest("tr").addClass("blink send-error");
       });
     }
-  };
+  }
 
   /*		Show/Hide function		*/
 
-  const showElement = (element, classes) => {
+  function showElement(element, classes) {
     if ($(document).has(element)) {
       let cls = classes || "";
       element.fadeToggle().toggleClass(cls);
       return element;
     }
-  };
+  }
 
-  const hideElement = (element, classes) => {
+  function hideElement(element, classes) {
     if ($(document).has(element)) {
       let cls = classes || "";
       element.fadeToggle().toggleClass(cls).focus();
       return element;
     }
-  };
+  }
 
   /*		Events		*/
 
   mainContent.on("click", ".file pre", event => {
+    // slideToggle() on file
     event.stopPropagation();
     $(event.target).siblings(".sections").slideToggle(400);
     $(event.target)
@@ -215,6 +249,7 @@ $(function() {
   });
 
   mainContent.on("click", ".section pre", event => {
+    // slideToggle() section
     event.stopPropagation();
     $(event.target).siblings(".table-wrap").slideToggle(400);
     $(event.target)
@@ -224,6 +259,7 @@ $(function() {
   });
 
   mainContent.on("click", "tbody tr .ru-translate", event => {
+    // RU td click
     event.stopPropagation();
 
     let input = $(event.target).siblings("input.td-edit"),
@@ -256,6 +292,7 @@ $(function() {
   });
 
   mainContent.on("keydown", "tbody .td-edit", event => {
+    // keydown on RU td
     event.stopPropagation();
 
     let span = $(event.target).closest("td").children("span"),
@@ -267,8 +304,20 @@ $(function() {
         hideElement($(event.target), "hidden invisible active");
 
         if (value !== "" && value !== span.text()) {
+          let replaceInput = [];
+
           span.text(value);
-          sendValueToServer($(event.target), value, "edit"); ////////
+          $(event.target).attr("placeholder", value);
+          sendValueToServer($(event.target), value, "edit"); // send this input
+
+          replaceInput.push(replace(value, $(event.target).closest("tr")));
+          if (replaceInput.length > 0) {
+            $.each(replaceInput, (i, input) => {
+              input.val(value);
+              input.attr("placeholder", value);
+              sendValueToServer(input, value, "edit"); // send to server next edit inputs
+            });
+          }
         }
         break;
       case 27: // Esc
@@ -291,6 +340,7 @@ $(function() {
   });
 
   mainContent.on("click", ".section .fa-trash-o", event => {
+    // delete tbody line
     event.stopPropagation();
     sendValueToServer($(event.target), null, "delete");
 
