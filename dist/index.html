@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="./img/favicon/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="./img/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#171717">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#171717">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#171717">
+
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #171717;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="pulse"></div>
+		<p>Please wait, loading...</p>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header-logo col-md-8 col-xs-12">
+					<img src="./img/factorio-logo.png" alt="Factorio" class="img-responsive">
+				</div>
+				<div class="header-select col-md-4 col-xs-12">
+					<select id="dir">
+						<option value="" disabled selected="selected">Directory</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-content">
+		<div class="container">
+			<div class="loader-container hidden">
+				<div class='loader-pacman'>
+					<div class='pacman'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='dot'></div>
+					<div class='ghost'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="files hidden_template">
+		<div class="file">
+			<pre></pre>
+			<div class="sections"></div>
+		</div>
+	</div>
+
+	<div class="top" title="Up"><i class="fa fa-arrow-up"></i></div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
