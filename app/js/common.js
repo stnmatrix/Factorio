@@ -105,13 +105,15 @@ $(function() {
         let ru = tr.children("td").eq(2);
 
         switch (val.status) { // TR data status 0: default, 1: new, 2: non-edit
-          case 1:
+          case 0:
             ru.children("span.ru-translate").addClass("new");
+            tr.addClass('bg');
             break;
           case 2:
             ru.append(`<i class="fa fa-trash-o" title="Delete"></i>`);
 
             ru.children("span.ru-translate").addClass("old");
+            tr.addClass('bg');
             break;
         }
         ru.children(".td-edit").attr("placeholder", placeholder);
