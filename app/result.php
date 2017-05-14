@@ -1,17 +1,16 @@
 <?php
 $PROJECTS=array(
 #    0=>'---',
-    1=>'/home/alexey/Desktop/Angelsaddons-locale/',
+    1=>'/home/toxa/projects/translate/angelslocale/Angelsaddons-locale/',
 #    2=>'asasas'
 );
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, GET');
-header('Access-Control-Allow-Headers: X-Requested-With, content-type');
-header("ContentType: 'application/json; charset=utf-8'");
 $ORIGINAL='locale/en/';
 $CREATE='locale/ru/';
 $newline="\r\n";
-if ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionname']) && isset($_POST['variablename']) && isset($_POST['ru']) ) {
+$logfile='/tmp/logwww';
+$LOG=false;
+if ( $LOG ) { file_put_contents($logfile,"Start log:".date("Y.m.d H:i",time())."\n"); };
+if ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionname']) && isset($_POST['variablename']) && isset($_POST['del']) ) { //delete
  $did=(int)$_POST['dir'];
  if ( false === isset($PROJECTS[$did]) ) {
   header( 'HTTP/1.1 400 BAD REQUEST' );
@@ -22,34 +21,98 @@ if ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionn
   header( 'HTTP/1.1 400 BAD REQUEST' );
   exit;
  };
+ $sectionname=trim($_POST['sectionname']);
+ $variablename=trim($_POST['variablename']);
  $data=file($file);
- $search='['.$_POST['sectionname'].']';
- $var=false; $ok=true;
+ $search='['.$sectionname.']';
+ if ( $LOG ) { file_put_contents($logfile,"Dir:".$did.' File:'.$file.' Section:'.$sectionname.' Var:'.$variablename.' Ru:'.$ru."\n",FILE_APPEND); }
+ $var=false; $ok=false;
  $l=strlen($search);
  foreach ( $data as $i=>$str ) {
   if ( substr($str,0,$l) == $search ) {
    if ( $var ) {
-    $data[$i]=$search.$_POST['ru'].$newline;
+    unset($data[$i]);
     $ok=true;
+    if ( $LOG ) { file_put_contents($logfile,"Found variable:'".$search."'\n",FILE_APPEND); };
     break;
    }
    else {
-    $search=$_POST['variablename'].'=';
+    if ( $LOG ) { file_put_contents($logfile,"Found section:'".$search."'\n",FILE_APPEND); };
+    $search=$variablename.'=';
+    $l=strlen($search);
+    $var=true;
+   };
+  };
+ };
+ if ( $ok ) {
+  $bt=file_put_contents($file,$data);
+  if ( $LOG ) { file_put_contents($logfile,"Write bytes: ".$bt."\n",FILE_APPEND); };
+  header('Status: 200 Ok');
+ }
+ else {
+  header('HTTP/1.1 400 BAD REQUEST');
+ };
+ exit;
+}
+elseif ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionname']) && isset($_POST['variablename']) && isset($_POST['ru']) ) {
+ $did=(int)$_POST['dir'];
+ if ( false === isset($PROJECTS[$did]) ) {
+  header('HTTP/1.1 400 BAD REQUEST');
+  exit;
+ };
+ $file=$PROJECTS[$did].$CREATE.$_POST['filename'];
+ if ( false === file_exists($file) ) {
+  header( 'HTTP/1.1 400 BAD REQUEST' );
+  exit;
+ };
+ $sectionname=trim($_POST['sectionname']);
+ $variablename=trim($_POST['variablename']);
+ $ru=trim($_POST['ru']);
+ $data=file($file);
+ $search='['.$sectionname.']';
+ if ( $LOG ) { file_put_contents($logfile,"Dir:".$did.' File:'.$file.' Section:'.$sectionname.' Var:'.$variablename.' Ru:'.$ru."\n",FILE_APPEND); }
+ $var=false; $ok=false;
+ $l=strlen($search);
+ foreach ( $data as $i=>$str ) {
+  if ( substr($str,0,$l) == $search ) {
+   if ( $var ) {
+    $data[$i]=$search.$ru.$newline;
+    $ok=true;
+    if ( $LOG ) { file_put_contents($logfile,"Found variable:'".$search."'\n",FILE_APPEND); };
+    break;
+   }
+   else {
+    if ( $LOG ) { file_put_contents($logfile,"Found section:'".$search."'\n",FILE_APPEND); };
+    $search=$variablename.'=';
     $l=strlen($search);
     $var=true;
    };
   }
   elseif ( $var && ( substr($str,0,1) == '[' )) {
-   $data[$i]=$search.$_POST['ru'].$newline.$data[$i];
+   $data[$i]=$search.$ru.$newline.$data[$i];
    $ok=true;
+   if ( $LOG ) { file_put_contents($logfile,"Update variable:'".$search.$ru."'\n",FILE_APPEND); };
    break;
   };
  };
- if ( $ok ) { file_put_contents($file,implode($data,'')); };
+ if ( false === $ok ) {
+  if ( false === $var ) {
+   $data[]='['.$sectionname.']'.$newline;
+    if ( $LOG ) { file_put_contents($logfile,"Add Section '[".$sectionname."]'\n",FILE_APPEND); };
+  };
+  $data[]=$variablename.'='.$ru.$newline;
+  if ( $LOG ) { file_put_contents($logfile,"Add variable:'".$variablename.'='.$ru."'\n",FILE_APPEND); };
+ };
+ $bt=file_put_contents($file,$data);
+ if ( $LOG ) { file_put_contents($logfile,"Write bytes: ".$bt."\n",FILE_APPEND); };
  header('Status: 200 Ok');
  exit;
 };
 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, GET');
+header('Access-Control-Allow-Headers: X-Requested-With, content-type');
+header("ContentType: 'application/json; charset=utf-8'");
 if ( isset($_GET['num']) ) {
  $num=(int)$_GET['num'];
  if ( $num < 0 ) { $num=''; };
@@ -88,7 +151,7 @@ if ( isset($_GET['getdir']) ) {
     };
     $v=explode('=',$v,2);
     $v[0]=trim($v[0]); $v[1]=trim($v[1]);
-    $out[$fname][$section][]=array('var'=>$v[0],'en'=>$v[1],'ru'=>'','status'=>1); //status?: 0: standart, 1: newline, 2: oldline
+    $out[$fname][$section][]=array('var'=>$v[0],'en'=>$v[1],'ru'=>'','status'=>1); //status: 0: standart, 1: newline, 2: oldline
    };
    // ru file
    $section='';
@@ -110,14 +173,14 @@ if ( isset($_GET['getdir']) ) {
      if ( $v[0] == $s['var'] ) {
       //add ru string:
       $out[$fname][$section][$i]['ru']=$v[1];
-      $out[$fname][$section][$i]['status']=0; // status !
+      $out[$fname][$section][$i]['status']=0;
       $ok=false;
       break;
      };
     };
     if ( $ok ) {
      //old string
-     $out[$fname][$section][]=array('var'=>$v[0],'en'=>'','ru'=>$v[1],'status'=>2); // status !
+     $out[$fname][$section][]=array('var'=>$v[0],'en'=>'','ru'=>$v[1],'status'=>2);
     };
    };
   };

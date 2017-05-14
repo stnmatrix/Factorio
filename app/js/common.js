@@ -5,12 +5,16 @@ $(function() {
     sectionTemplate = $(
       `<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
     ),
-    url = "http://localhost/result.php";
+    url = "./result.php";
 
   /*		Get Sections List		*/
 
   const getSectionsList = $.getJSON(`${url}?getlist`, response => {
     let options = [];
+
+    if(response === []) {
+      error('Empty response');
+    }
 
     $.each(response, (i, element) => {
       options.push($(`<option value=${i}>${element}</option>`));
@@ -137,7 +141,7 @@ $(function() {
       return false;
     }
 
-    let enValue = trElement.children("td").eq(1).text(), input;
+    let enValue = trElement.children("td").eq(1).text(), input = [];
 
     $.each($(".sections tbody").find("tr"), (i, tr) => {
       let enTD = $(tr).children("td").eq(1), en = enTD.text();
@@ -150,10 +154,10 @@ $(function() {
           // другие элементы
           let span = $(tr).find(".ru-translate");
           span.text(ruValue);
-          input = span.siblings(".td-edit");
+          input.push(span.siblings(".td-edit"));
         } else {
           // этот же элемент
-          input = $(tr).find(".td-edit");
+          input.push(trElement.find(".td-edit"));
         }
       }
     });
@@ -308,9 +312,9 @@ $(function() {
 
           span.text(value);
           $(event.target).attr("placeholder", value);
-          sendValueToServer($(event.target), value, "edit"); // send this input
 
-          replaceInput.push(replace(value, $(event.target).closest("tr")));
+          replaceInput = [...replace(value, $(event.target).closest("tr"))];
+          console.log(replaceInput);
           if (replaceInput.length > 0) {
             $.each(replaceInput, (i, input) => {
               input.val(value);
