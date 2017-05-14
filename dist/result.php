@@ -10,10 +10,54 @@ $newline="\r\n";
 $logfile='/tmp/logwww';
 $LOG=false;
 if ( $LOG ) { file_put_contents($logfile,"Start log:".date("Y.m.d H:i",time())."\n"); };
-if ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionname']) && isset($_POST['variablename']) && isset($_POST['ru']) ) {
+if ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionname']) && isset($_POST['variablename']) && isset($_POST['del']) ) { //delete
  $did=(int)$_POST['dir'];
  if ( false === isset($PROJECTS[$did]) ) {
   header( 'HTTP/1.1 400 BAD REQUEST' );
+  exit;
+ };
+ $file=$PROJECTS[$did].$CREATE.$_POST['filename'];
+ if ( false === file_exists($file) ) {
+  header( 'HTTP/1.1 400 BAD REQUEST' );
+  exit;
+ };
+ $sectionname=trim($_POST['sectionname']);
+ $variablename=trim($_POST['variablename']);
+ $data=file($file);
+ $search='['.$sectionname.']';
+ if ( $LOG ) { file_put_contents($logfile,"Dir:".$did.' File:'.$file.' Section:'.$sectionname.' Var:'.$variablename.' Ru:'.$ru."\n",FILE_APPEND); }
+ $var=false; $ok=false;
+ $l=strlen($search);
+ foreach ( $data as $i=>$str ) {
+  if ( substr($str,0,$l) == $search ) {
+   if ( $var ) {
+    unset($data[$i]);
+    $ok=true;
+    if ( $LOG ) { file_put_contents($logfile,"Found variable:'".$search."'\n",FILE_APPEND); };
+    break;
+   }
+   else {
+    if ( $LOG ) { file_put_contents($logfile,"Found section:'".$search."'\n",FILE_APPEND); };
+    $search=$variablename.'=';
+    $l=strlen($search);
+    $var=true;
+   };
+  };
+ };
+ if ( $ok ) {
+  $bt=file_put_contents($file,$data);
+  if ( $LOG ) { file_put_contents($logfile,"Write bytes: ".$bt."\n",FILE_APPEND); };
+  header('Status: 200 Ok');
+ }
+ else {
+  header('HTTP/1.1 400 BAD REQUEST');
+ };
+ exit;
+}
+elseif ( isset($_POST['dir']) && isset($_POST['filename']) && isset($_POST['sectionname']) && isset($_POST['variablename']) && isset($_POST['ru']) ) {
+ $did=(int)$_POST['dir'];
+ if ( false === isset($PROJECTS[$did]) ) {
+  header('HTTP/1.1 400 BAD REQUEST');
   exit;
  };
  $file=$PROJECTS[$did].$CREATE.$_POST['filename'];
