@@ -105,7 +105,7 @@ $(function() {
         let ru = tr.children("td").eq(2);
 
         switch (val.status) { // TR data status 0: default, 1: new, 2: non-edit
-          case 0:
+          case 1:
             ru.children("span.ru-translate").addClass("new");
             tr.addClass('bg');
             break;
