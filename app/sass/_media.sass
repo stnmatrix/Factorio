@@ -15,10 +15,24 @@
 				margin: 0 auto
 				padding-bottom: 25px
 
+		.header-select
+			.selectize-control.single
+				.selectize-input
+					height: 50px
+					&::after
+						margin-top: 2px
+			.selectize-dropdown.single
+				.selectize-dropdown-content
+					.option
+						height: 40px
+						line-height: 30px
+						font-size: 18px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.main-content
+		.loader-container
+			display: none
 
 
 /* Extra Small Devices, Phones */

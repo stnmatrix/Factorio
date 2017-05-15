@@ -5,7 +5,7 @@ $(function() {
     sectionTemplate = $(
       `<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
     ),
-    url = "./result.php";
+    url = "http://localhost/result.php";
 
   /*		Get Sections List		*/
 
@@ -88,7 +88,8 @@ $(function() {
       /* Tr render */
 
       $.each(obj, (i, val) => {
-        let tr = $(`<tr></tr>`), placeholder = "";
+        let tr = $(`<tr></tr>`), placeholder = "",
+            status = '';
 
         if (val.ru === "") {
           placeholder = "Введите перевод";
@@ -96,10 +97,18 @@ $(function() {
           placeholder = val.ru;
         }
 
+        if (val.status === 0) {
+          status = 'Edit';
+        } else if (val.status === 1) {
+          status = 'New!';
+        } else {
+          status = 'Non-edit';
+        }
+
         tr.append(`<td><span>${val.var}</span></td>`);
         tr.append(`<td><span>${val.en}</span></td>`);
         tr.append(
-          `<td><span class='ru-translate' title=${val.status === 0 ? "Non-edit" : "Edit"}>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible" data-status=${val.status} value="${!val.ru && val.ru === "" ? "" : val.ru.replace(/\"/g, "&quot;")}"/></td>`
+          `<td><span class='ru-translate' title=${status}>${val.ru === "" ? "Не указано" : val.ru}</span><input type="text" class="td-edit hidden invisible" data-status=${val.status} value="${!val.ru && val.ru === "" ? "" : val.ru.replace(/\"/g, "&quot;")}"/></td>`
         );
 
         let ru = tr.children("td").eq(2);
