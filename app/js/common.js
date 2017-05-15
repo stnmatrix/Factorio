@@ -5,7 +5,7 @@ $(function() {
     sectionTemplate = $(
       `<div class="section"><pre></pre><div class="table-wrap"><table class="table table-condensed section-table"><thead><tr><td>VARIABLE NAME</td><td>EN</td><td>RU</td></tr></thead><tbody></tbody></table></div`
     ),
-    url = "http://localhost/result.php";
+    url = "./result.php";
 
   /*		Get Sections List		*/
 
