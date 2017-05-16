@@ -9,11 +9,11 @@ $(function() {
 
   /*		Get Sections List		*/
 
-  const getSectionsList = $.getJSON(`${url}?getlist`, response => {
+  $.getJSON(`${url}?getlist`, response => {
     let options = [];
 
-    if(response === []) {
-      error('Empty response');
+    if (response === []) {
+      error("Empty response");
     }
 
     $.each(response, (i, element) => {
@@ -88,8 +88,7 @@ $(function() {
       /* Tr render */
 
       $.each(obj, (i, val) => {
-        let tr = $(`<tr></tr>`), placeholder = "",
-            status = '';
+        let tr = $(`<tr></tr>`), placeholder = "", status = "";
 
         if (val.ru === "") {
           placeholder = "Введите перевод";
@@ -98,11 +97,11 @@ $(function() {
         }
 
         if (val.status === 0) {
-          status = 'Edit';
+          status = "Edit";
         } else if (val.status === 1) {
-          status = 'New!';
+          status = "New!";
         } else {
-          status = 'Non-edit';
+          status = "Non-edit";
         }
 
         tr.append(`<td><span>${val.var}</span></td>`);
@@ -116,13 +115,13 @@ $(function() {
         switch (val.status) { // TR data status 0: default, 1: new, 2: non-edit
           case 1:
             ru.children("span.ru-translate").addClass("new");
-            tr.addClass('bg');
+            tr.addClass("bg");
             break;
           case 2:
             ru.append(`<i class="fa fa-trash-o" title="Delete"></i>`);
 
             ru.children("span.ru-translate").addClass("old");
-            tr.addClass('bg');
+            tr.addClass("bg");
             break;
         }
         ru.children(".td-edit").attr("placeholder", placeholder);
