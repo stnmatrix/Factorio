@@ -1,3 +1,7 @@
+$(window).on("load", () => {
+  $(".preloader").delay(2000).fadeOut("slow");
+  $(".loader-container").delay(5000).removeClass("hidden");
+});
 $(function() {
   const mainContent = $(".main-content .container"),
     select = $("#dir"),
@@ -374,18 +378,22 @@ $(function() {
 
   $(window).scroll(() => {
     if ($(this).scrollTop() > 1200) {
-      $(".top").addClass("active");
+      $(".up").addClass("active");      
+    } else if ($(this).scrollTop() > 400) {
+      $(".down").addClass("active");
     } else {
-      $(".top").removeClass("active");
+      $(".up").removeClass("active");
+      $(".down").removeClass("active");
     }
+
   });
 
-  $(".top").on("click", () => {
+  $(".up").on("click", () => {
     $("html, body").stop().animate({ scrollTop: 0 }, "slow", "swing");
   });
+  $(".down").on("click", () => {
+    let height = mainContent.height();
+    $("html, body").stop().animate({ scrollTop: height }, "slow", "swing");
+  });
 });
 
-$(window).on("load", () => {
-  $(".preloader").delay(2000).fadeOut("slow");
-  $(".loader-container").delay(5000).removeClass("hidden");
-});
