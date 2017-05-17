@@ -93,6 +93,7 @@ if ( isset($_GET['getdir']) ) {
    // ru file
    $section='';
    $data=file($newfile);
+   $out[$fname]['mtime']=filemtime($newfile);
    $tmp=array();
    foreach ( $data as $i=>$v ) {
     $v=trim($v);
